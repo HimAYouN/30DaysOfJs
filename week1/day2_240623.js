@@ -39,3 +39,35 @@
         console.log(j);
         j++;
     }
+
+
+    //Error Handling 
+    //Try-catch block
+    //The 'try' block contains the code that might through an error
+    //The catch block is executed when an error occurs in corresponding 'try' block
+
+    try {
+        // Code that might throw an error
+        var result = 10 / 0;
+        console.log(result);
+      } catch (error) {
+        // Code to handle the error
+        console.log("An error occurred:", error);
+      }
+      
+      
+    //Throwing custom errors
+    function divide(a, b) {
+        if (b === 0) {
+          throw new Error("Division by zero is not allowed.");
+        }
+        return a / b;
+      }
+      
+      try {
+        var result = divide(10, 0);
+        console.log(result);
+      } catch (error) {
+        console.log("An error occurred:", error);
+      }
+      
