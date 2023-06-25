@@ -21,7 +21,7 @@ var mixed = [1, "pineapple", true];
         arrFruits.push("Oranges");
         arrFruits.unshift("Mango");
     
-        arrFruits.shift(); arrFruits.unshift("Gava"); console.log(arrFruits); arrFruits.push("Peach", "Grapes"); console.log(arrFruits);
+        arrFruits.shift(); arrFruits.unshift("Gava");  arrFruits.push("Peach", "Grapes"); console.log(arrFruits);
 
     //Array iteration 
     //Iteration over array allows us to perform task on each element 
