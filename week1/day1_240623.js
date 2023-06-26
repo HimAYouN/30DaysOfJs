@@ -32,6 +32,13 @@
     var y = 6;
     var z = p+y;
     
+
+    //Generating Output 
+    //Method 1: 
+    console.log("Hello");
+    //Method 2: 
+    window.alert("Hello");
+    
     
     
     

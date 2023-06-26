@@ -29,13 +29,16 @@ var mixed = [1, "pineapple", true];
         //'forEach()' : Executes a provided function once for each array element 
         //'map()' : creates a new arary with the results of calling a provided function on every element 
         //'filter()' : creates a new array with elements that pass a provided test
-
+        
+        
+        //For loop
         var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         for(var i  = 0; i<10;i++){
             console.log(numbers[i]+ ", ");
         }
 
-
+         
+        //forEach()
         numbers.forEach(function(i){
             console.log(i);
         });
@@ -44,10 +47,15 @@ var mixed = [1, "pineapple", true];
             console.log(j);
         });
 
+
+        //filter()
         var evenNbrs = numbers.filter(function(i){
             return i % 2 == 0;
         })
-
         evenNbrs.forEach(i => {
             console.log(i);
         });
+
+
+        //map()
+        
