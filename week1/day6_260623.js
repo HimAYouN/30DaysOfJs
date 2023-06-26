@@ -18,3 +18,24 @@
     var elementBySelectorAll = document.querySelectorAll("div.myClass");
 
 //Changing HTML Content 
+//HTML content can be modified using folling properties
+    //'textContent' Changes the text content of an element
+    //'innerHTML' Changes the HTML content of an element
+
+    var element = document.getElementById("myElement");
+    element.textContent = "New text Content";
+    element.innerHTML = "<strong>New HTML content</strong>";
+
+
+//Manipulating CSS Classes 
+ //CSS classes can be added, removed, or toggled on elements using 'classList' property
+    //'classList.add()' Adds a class to an element
+    //'classList.remove()' Removes a class from an element
+    //'classList.toggle()' Toggles the presence of a class on an element
+
+    var element = document.getElementById("myElement");
+    element.classList.add("newClass");
+    element.classList.remove("oldClass");
+    element.classList.toggle("active");
+
+    
