@@ -1,0 +1,5 @@
+Test 1 : window.alert, changing or generating text
+
+Test 2 : Getting info from form elements, and printing them.
+
+Test 3 : 
