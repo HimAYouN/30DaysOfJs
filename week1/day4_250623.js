@@ -1,5 +1,5 @@
-//Day 3
-
+//Day 4
+//Day 4: Arrays, array manipulation methods (push, pop, slice), and array iteration (for loop, forEach).
 //Arrays 
 //Array are used to store multiple values in single variable 
 

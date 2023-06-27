@@ -1,4 +1,5 @@
 //Day 6
+//Day 6: DOM manipulation basics, selecting elements, changing HTML content, and manipulating CSS classes.
 //DOM Manipulation Basics
 //The Document Object Model (DOM) is a programming interface that represents the structure of HTML documents. It allows Javascript to interact with the elements of a web page.
 

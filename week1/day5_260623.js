@@ -1,4 +1,5 @@
 // Day 5 
+//Day 5: Introduction to objects, object properties, methods, and accessing/modifying object data.
 //Objects
 
 

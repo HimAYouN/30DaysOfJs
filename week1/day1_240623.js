@@ -1,4 +1,6 @@
 //Day 1
+//Day 1: Introduction to JavaScript, variables, data types, and operators.
+
 //Introduction
 
 

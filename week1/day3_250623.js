@@ -1,4 +1,6 @@
 // Day 3
+//Day 3: Functions, parameters, return values, and function expressions.
+
 //Functions 
 //functions are the reusable block of code that perform specific task 
 //Decalaring a function 

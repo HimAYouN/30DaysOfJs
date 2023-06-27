@@ -1,4 +1,5 @@
 //Day 2
+//Day 2: Control flow statements (if-else, switch), loops (for, while), and basic error handling.
 
 // Control flow statement
  // if-else
