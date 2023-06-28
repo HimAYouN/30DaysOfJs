@@ -16,15 +16,13 @@ myButton.addEventListener("click", function(){
 function getValue(id) {
     // window.alert("hii");
     var text = document.getElementById(id).value;
-    document.getElementById(id).value = '';
+    // document.getElementById(id).value = '';
     // alert(text);
     return text;
 }
 
-printButton.addEventListener("click", printValue("unPrint"));
-
-
-function printValue(id){
+printButton.addEventListener("click", function(){
     // window.alert(userN);
-    document.getElementById(id).innerHTML = userN;
-}
+    document.getElementById("unPrint").innerHTML = userN;
+});
+
