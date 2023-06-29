@@ -1,16 +1,16 @@
 30 days of Javascript
 Week 1:
-- Day 1: Introduction to JavaScript, variables, data types, and operators.
-- Day 2: Control flow statements (if-else, switch), loops (for, while), and basic error handling.
-- Day 3: Functions, parameters, return values, and function expressions.
-- Day 4: Arrays, array manipulation methods (push, pop, slice), and array iteration (for loop, forEach).
-- Day 5: Introduction to objects, object properties, methods, and accessing/modifying object data.
-- Day 6: DOM manipulation basics, selecting elements, changing HTML content, and manipulating CSS classes.
-- Day 7: Events, event listeners, handling user interactions, and basic form validation.
+- Day 01: Introduction to JavaScript, variables, data types, and operators.
+- Day 02: Control flow statements (if-else, switch), loops (for, while), and basic error handling.
+- Day 03: Functions, parameters, return values, and function expressions.
+- Day 04: Arrays, array manipulation methods (push, pop, slice), and array iteration (for loop, forEach).
+- Day 05: Introduction to objects, object properties, methods, and accessing/modifying object data.
+- Day 06: DOM manipulation basics, selecting elements, changing HTML content, and manipulating CSS classes.
+- Day 07: Events, event listeners, handling user interactions, and basic form validation.
 
 Week 2:
-- Day 8: Introduction to asynchronous JavaScript, callbacks, and setTimeout.
-- Day 9: Promises, handling asynchronous operations, and chaining promises.
+- Day 08: Introduction to asynchronous JavaScript, callbacks, and setTimeout.
+- Day 09: Promises, handling asynchronous operations, and chaining promises.
 - Day 10: Introduction to JSON, parsing and stringifying JSON data.
 - Day 11: Advanced array methods (map, filter, reduce) and working with multidimensional arrays.
 - Day 12: Higher-order functions, closures, and scope.
