@@ -2,7 +2,7 @@
 var myButton = document.getElementById("myButton");
 var confermation = document.getElementById("confermation");
 var printButton = document.getElementById("printButton");
-var userN= 'aa';
+var userN= '';
 
 myButton.addEventListener("click", function(){
     userN = getValue("uName");
