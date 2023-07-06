@@ -14,6 +14,7 @@
     });
 
     //In this example, we create a Promise that simulates an asynchronous operation using 'setTimeout'. After a delay of 2 seconds, the Promise is resolved with the message "Good day!" using the 'resolve()' function.
+
 //Handling Asynchronous Opeartions with Promises:
     //Promises provide methods to handle the fulfillment or rejection of the asynchronous task. 
     //The most common methods are:
