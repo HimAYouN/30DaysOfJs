@@ -22,3 +22,12 @@
 
 
 //Reduce Method
+    //The 'reduce()' method is used to reduce an array to a single value by executing a provided function an each element.
+    // It accumulates the result of the function from left to right and returns the final accumulates value.
+    //Example
+    var sum = numbers.reduce((acc, num)=>{
+        return acc+num;
+    }, 0);
+     console.log(sum);
+
+     
