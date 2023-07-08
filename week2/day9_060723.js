@@ -30,3 +30,33 @@
 
     //In the example, we use 'then()' method to handle the fulfillment of the promise. The callback function receives the resolved value of the promise (in this example "Good day"), If the promise is rejected, the 'catch()' method is used to handle the error.
 
+//Chaining Promises
+
+    //Promises can be chained together to handle a sequence a asynchronous operations. The result of one Promise becomes the input for the next, allowing us to create a clean and readable flow of asynchronous task.
+    //Example 
+
+     var firstPromise = new Promise(function(resolve, reject){
+        setTimeout(() => {
+            var data = "first Promise";
+            resolve(data);
+        }, 2000);
+     });
+
+     var secondPromise = new Promise(function(resolve, reject){
+        setTimeout(() => {
+            var result = " second promise";
+            resolve(result);
+        }, 3000);
+     });
+
+     firstPromise.then(function(result){
+        console.log(result);
+        return secondPromise;
+
+     }).then(function(result){
+        console.log(result);
+     }).catch(function(error){
+        console.log(error);
+     });
+
+     //In this example, we have two Promises (firstPromise and secondPromise). The 'then()' method is used to chain them together. The result of the first Promise is passed as input to the second Promise, creating a sequential flow of asynchronous operations.
