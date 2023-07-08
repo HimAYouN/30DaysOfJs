@@ -28,4 +28,5 @@
         console.log(error);
     });
 
-    //In the example, we use 'then()' method to handle the fulfillment of the promise. The callback function 
+    //In the example, we use 'then()' method to handle the fulfillment of the promise. The callback function receives the resolved value of the promise (in this example "Good day"), If the promise is rejected, the 'catch()' method is used to handle the error.
+
