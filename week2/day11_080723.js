@@ -30,4 +30,12 @@
     }, 0);
      console.log(sum);
 
-     
+
+
+//Working with the Multidimensional Arrays
+     //Muti-Dimensional Arrays are arrays that contain other arrays as their element. They are often used to represent tabular or grid-like data structure.
+     //We ca access and manipulate elements in the Multidimensional array using multiple indices.
+    
+    //Example
+    var mDArray =[[1,2],[2,3,4,5,6],[6,7,8],[8,9,0]];
+    console.log(mDArray[1][1]);
