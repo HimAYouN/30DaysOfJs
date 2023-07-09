@@ -46,6 +46,39 @@
     //callback functions allow us to work with the results of asynchronous operations and perform further actions, such as updating the UI or triggering additional functions.
 
 
+    //More Callback Example
+    const calculate = (a, b, operation)=>{
+        return operation(a,b);
+        
+      };
+      
+      
+      var s = calculate(8, 7, addition);
+      
+      function addition(x,y){
+        return x+y;
+      }
+      
+      console.log(s);
+      
+      var p = calculate (9,5, subtraction);
+      
+      function subtraction(x,y){
+        return x-y;
+      }
+      
+      console.log(p);
+      //Here we call calculate function with parameters 8, 7, addition(just passing addition function name not calling addition function),
+      //Then in calculate function it calls back addition with help of 'operation()' 
+      //Then we reach inside of addition function and perform the task
+      // and the reterned value is first returned inside to calculate function  'return operation(a,b);' then this statement reterns it to original function which is 's'.
+      
+
+
+
+
+
+
 //Part 3
 // setTimeout() Function
     //The 'setTimeout()' function is a build-in javascript function that allows you to schedule the execution of a function after a specified delay(in milliseconds). It is commonly used to introduce delays or schedule actions in javascript applications.
