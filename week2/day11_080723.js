@@ -30,6 +30,28 @@
     }, 0);
      console.log(sum);
 
+//Find()
+    const a = [1,2,-3,4,-4,5,3,6,-7,-2,-5,-6,9,-9];
+
+    console.log(a);
+
+    function firstNeg(num){
+        return num<0;
+    }
+        
+    var result = a.find(firstNeg);
+    
+    console.log(result);
+
+//FindIndex()
+
+    // function firstNegIndex(num){
+    //     return num<0;
+    // }
+    // var result2 = a.findIndex(firstNegIndex);
+    var result2 = a.findIndex(firstNeg);
+
+    console.log(result2);
 
 
 //Working with the Multidimensional Arrays
