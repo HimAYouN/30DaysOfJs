@@ -111,3 +111,32 @@
 
       //The setTimeout() function is scheduled to execute after 2000 milliseconds, but it is canceled immediately using clearTimeout(). As a result, the function will not be executed.
       //The setTimeout() function is widely used for adding delays, creating timed animations, scheduling repetitive tasks, and implementing other time-based functionalities in JavaScript applications.
+
+
+
+      //USING SETTIMEOUT AND CALLBACK FUNCTION 
+
+      
+        getCheese((result)=>{
+            console.log(result);
+        });
+
+        function getCheese(callback){
+            setTimeout(()=>{
+              callback("I got the Cheese");
+            },2000);
+        };
+
+
+
+        whichCar((result)=>{
+          console.log(result);
+        });
+        
+        
+        function whichCar(outResult){
+          setTimeout(()=>{
+            outResult("Aulto 800");
+          },1000);
+        };
+  
