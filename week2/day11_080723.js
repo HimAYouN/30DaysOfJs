@@ -54,6 +54,24 @@
     console.log(result2);
 
 
+//forEach()
+    var sum = 0;
+
+    a.forEach((i)=>{
+        sum = sum+i;
+    });
+    console.log(sum);
+
+    
+    var ans = 1;
+    
+    a.forEach((i)=>{
+        ans = ans*i;
+    });
+
+    console.log(ans*-1);
+    
+
 //Working with the Multidimensional Arrays
      //Muti-Dimensional Arrays are arrays that contain other arrays as their element. They are often used to represent tabular or grid-like data structure.
      //We ca access and manipulate elements in the Multidimensional array using multiple indices.
