@@ -24,7 +24,8 @@ selector("submitButton").addEventListener("click", ()=>{
     // window.alert(data);
     creatingEle(data);
 
-})
+});
+// selector("submitButton").addEventListener(KeyboardEvent)
 
 
 function valueReturner(id){
