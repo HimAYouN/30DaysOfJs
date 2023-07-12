@@ -71,19 +71,6 @@ function creatingEle(data){
 
 
 
-// deleting a task OR making a task strike Through
-
-// document.addEventListener("click", ()=>{
-    
-//     deleteEle()
-// })
+// deleting a task OR making a task strikeThrough
 
 
-
-function deleteEle(data){
-    const task = document.createElement("li");
-    const element = selector("ulID");
-    task.innerHTML = "<s>" + data + "</s>";
-    task.classList.add("item");
-    element.appendChild(task);
-}

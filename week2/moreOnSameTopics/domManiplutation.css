@@ -50,3 +50,7 @@ body{
     width: auto;
 }
 
+.deleted{
+    font-style: oblique;
+    color: red;
+}
