@@ -1,5 +1,5 @@
 var data = " ";
-//short form 
+//short form for document.getElementById()
 function selector(tagName){
     return document.getElementById(tagName);
 }
@@ -18,6 +18,9 @@ function selector(tagName){
 // var data = (selector("InputID").innerHTML);
 // console.log(data);
 
+
+
+//Submitting value by clicking Submit button
 selector("submitButton").addEventListener("click", ()=>{
     data = valueReturner("InputID");
     // console.log(data);
@@ -25,9 +28,26 @@ selector("submitButton").addEventListener("click", ()=>{
     creatingEle(data);
 
 });
-// selector("submitButton").addEventListener(KeyboardEvent)
+//Submitting value bt keyboard "Enter Key"
+document.addEventListener("keypress", (event)=>{
+    if(event.key=="Enter"){
+        data = valueReturner("InputID");
+        // console.log(data);
+        // window.alert(data);
+        creatingEle(data);
+    }
+    
+
+});
 
 
+// const keyPress = document.addEventListener('keypress', (event)=>{
+//     console.log(event.key);
+// });
+// console.log(keyPress);
+
+
+//Fetching value of Users inserted data.
 function valueReturner(id){
     data = selector(id).value;
     selector(id).value = "";
