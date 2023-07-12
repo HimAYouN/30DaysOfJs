@@ -74,3 +74,7 @@ function creatingEle(data){
 // deleting a task OR making a task strikeThrough
 
 
+const elem = document.getElementsByClassName("item");
+elem.addEventListener("click", ()=>{
+    console.log("Hello");
+})
