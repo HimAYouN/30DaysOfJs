@@ -50,7 +50,7 @@ body{
     width: auto;
 }
 
-.deleted{
-    font-style: oblique;
-    color: red;
-}
+.strikethrough {
+    text-decoration: line-through;
+  }
+  

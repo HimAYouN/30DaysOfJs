@@ -65,12 +65,13 @@ function creatingEle(data){
     const element = selector("ulID");
 
 
-    
+    // const inrHtml = "<li class = 'item' onclick = 'delFunctn()'></li>";
+    // task.innerHTML = inrHtml;
 
 
-    const inrHtml = "<li class = 'item' onclick = 'delFunctn()'></li>";
+
     // task.innerHTML = inrHtml;// setting inner HTML of li element to user data
-    task.innerHTML = inrHtml;
+    
     task.innerText = data;
     task.classList.add("item");
     element.appendChild(task);
@@ -83,14 +84,21 @@ function creatingEle(data){
 
 // deleting a task OR making a task strikeThrough
 
+var ulContainer = document.getElementById("ulID");
+ulContainer.addEventListener('click', (event)=>{
+    var clickedItem = event.target;
 
-const elem = document.getElementsByClassName("item");
-elem.addEventListener("click", ()=>{
-    console.log("Hello");
+    if (clickedItem.classList.contains('item')) {
+        clickedItem.classList.toggle('strikethrough')
+    }
 })
 
 
-function delFunct(){
-    // selector("headTitle").innerText = "This txt is deleted";
-
+for(var i = 0; i<tasks.length;i++){
+    tasks[i].addEventListener('click', toggleStrikeThrough);
 }
+
+// function toggleStrikeThrough() {
+//     this.classList.toggle('strikethrough');
+//     console.log("Hello");
+//   }
