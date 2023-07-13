@@ -44,13 +44,15 @@ body{
 .item{
     margin: auto;
     padding: 20px;
+    
     display: flex;
     /* flex-direction: row; */
     align-items: center;
-    /* justify-content: center;  */
+    justify-content: space-between; 
     /* flex-direction: column; */
-    /* border: 2px solid black; */
-    height: 50px;
+    border: 0.5px solid rgba(0, 0, 0, 0.523);
+    
+    height: auto;
     width: auto;
     font-size: larger;
     background-color: #ffffff;
