@@ -13,7 +13,7 @@ body{
 
     
     /* background-color: #97FEED; */
-    color: #071952;
+    color: #092788;
     background: rgb(151,254,237);
     background: linear-gradient(90deg, rgb(53, 237, 207) 0%, rgb(95, 232, 227) 35%, rgb(200, 252, 255) 100%);
 }
@@ -59,8 +59,8 @@ body{
 
 .strikethrough {
     text-decoration: line-through;
-    color: #0719529d;
-    background-color: #ffffffcb;
+    color: #092788ca;
+    background-color: #ffffffa9;
   }
 
 
