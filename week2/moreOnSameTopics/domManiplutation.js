@@ -51,10 +51,7 @@ document.addEventListener("keypress", (event)=>{
 function valueReturner(id){
     data = selector(id).value;
     selector(id).value = "";
-    if(data==" "){
-        window.alert("Enter a task");
-        return null;
-    }
+    
     return data;
 }
 
@@ -67,7 +64,10 @@ function valueReturner(id){
 function creatingEle(data){
     const task = document.createElement("li");
     const element = selector("ulID");
-
+    if (data.trim() === '') {
+        alert("Enter Task");
+        return; // Ignore if input is empty or contains only whitespace
+      }
 
     // const inrHtml = "<li class = 'item' onclick = 'delFunctn()'></li>";
     // task.innerHTML = inrHtml;

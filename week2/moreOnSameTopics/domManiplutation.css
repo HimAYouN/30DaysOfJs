@@ -20,8 +20,11 @@ body{
 
 .headPart{
     /* border: 2px solid black; */
-    margin: 10px;
+    margin-left: 20%;
     /* background-color: #35A29F; */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
     
     
 }
@@ -40,6 +43,7 @@ body{
 
 .item{
     margin: auto;
+    padding: 20px;
     display: flex;
     /* flex-direction: row; */
     align-items: center;
@@ -49,15 +53,24 @@ body{
     height: 50px;
     width: auto;
     font-size: larger;
+    background-color: #ffffff;
     
 }
 
 .strikethrough {
     text-decoration: line-through;
     color: #0719529d;
+    background-color: #ffffffcb;
   }
+
+
 
 .item:hover{
     cursor: grab;
 }
-  
+/* .headPart:hover{
+    background: linear-gradient(90deg, rgb(53, 237, 207) 0%, rgb(95, 232, 227) 35%, rgb(200, 252, 255) 100%);
+    animation: both;
+    animation-delay: 1000ms;
+    
+}  */
