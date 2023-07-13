@@ -48,9 +48,16 @@ body{
     /* border: 2px solid black; */
     height: 50px;
     width: auto;
+    font-size: larger;
+    
 }
 
 .strikethrough {
     text-decoration: line-through;
+    color: #0719529d;
   }
+
+.item:hover{
+    cursor: grab;
+}
   

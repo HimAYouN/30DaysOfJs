@@ -51,6 +51,10 @@ document.addEventListener("keypress", (event)=>{
 function valueReturner(id){
     data = selector(id).value;
     selector(id).value = "";
+    if(data==" "){
+        window.alert("Enter a task");
+        return null;
+    }
     return data;
 }
 
