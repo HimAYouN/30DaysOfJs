@@ -63,9 +63,19 @@ function valueReturner(id){
 function creatingEle(data){
     const task = document.createElement("li");
     const element = selector("ulID");
-     task.innerText = data;// setting inner HTML of li element to user data
-     task.classList.add("item");
+
+
+    
+
+
+    const inrHtml = "<li class = 'item' onclick = 'delFunctn()'></li>";
+    // task.innerHTML = inrHtml;// setting inner HTML of li element to user data
+    task.innerHTML = inrHtml;
+    task.innerText = data;
+    task.classList.add("item");
     element.appendChild(task);
+
+    
 }
 
 
@@ -78,3 +88,9 @@ const elem = document.getElementsByClassName("item");
 elem.addEventListener("click", ()=>{
     console.log("Hello");
 })
+
+
+function delFunct(){
+    // selector("headTitle").innerText = "This txt is deleted";
+
+}
