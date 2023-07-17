@@ -13,3 +13,22 @@ function higherOrderFunction(callback){
 higherOrderFunction(()=>{
     console.log("Hello");
 });
+
+
+//closures:
+//Closures are a combination of a function and the lexical environment within which it was declared.
+//They allow functions to retain access to variables from their outer scope, even after the outer function has finished executing.
+
+//Example:
+    function outer(){
+        var outerVar = "This is outer var";
+
+        function inner(){
+            console.log(outerVar);
+        }
+
+        return inner;
+    }
+
+    var closure = outer();
+    closure();
