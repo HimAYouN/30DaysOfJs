@@ -4,15 +4,17 @@ const second = document.getElementById("secondH3");
 const button = document.getElementById("StartTimer");
 
 ///IDk what this does
-const minutes = 1;
+const minutes = 0.1;
 //changing the minutes into seconds
 let time = minutes * 60;
 
 button.addEventListener("click", startTimer());
 function startTimer(){
     console.log("Button clicked");
-    setInterval(()=>{
-
+    const interval = setInterval(()=>{
+        if(time == 0){
+            clearInterval(interval);
+        }
         const minutes = Math.floor(time/60);//getting minutes out from total seconds which were previously created by conveting minutes to seconds
         let seconds = time % 60; // getting remaining seconds from total seconds by using mod;
         
@@ -29,10 +31,7 @@ function startTimer(){
         // if(time == 0){
         //     playSound();
         // }
-        if(time == 0){
-            return 0;
-        }
-    
+        
     }, 1000);
 }
 
