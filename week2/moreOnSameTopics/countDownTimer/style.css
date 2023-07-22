@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+h1{
+    border: 1px dotted black;
+}
+
+.clockBody{
+    border: 2px solid black;
+    margin: 40px;
+
+}
+
+.hand{
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* margin: 20px; */
+    padding: 20px;
+    border: 1px dotted black;
+    display: inline-block;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    height: auto;
+    width: auto;
+}
+.button{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* position: relative; */
+}
