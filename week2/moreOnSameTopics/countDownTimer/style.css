@@ -33,3 +33,7 @@ h1{
 
     /* position: relative; */
 }
+#StartTimer{
+    height: 100px;
+    width: 400px;
+}
