@@ -8,20 +8,28 @@ button.addEventListener('click', ()=>{
     console.log("Hello");
     
     ///Setting the time in minutes
-    const minutes = 0.1;
+    const minutes = 1;
     //changing the minutes into seconds
     let time = minutes * 60;
     const interval = setInterval(()=>{
 
+
+        //clears the interval and calls the playsound function 
         if(time == 0){
+            playSound();
             clearInterval(interval);
         }
-        const minutes = Math.floor(time/60);//getting minutes out from total seconds which were previously created by conveting minutes to seconds
+
+
+
+        let minutes = Math.floor(time/60);//getting minutes out from total seconds which were previously created by conveting minutes to seconds
         let seconds = time % 60; // getting remaining seconds from total seconds by using mod;
         
-        // if(minutes<10){
-        //     minutes = '0' + minutes;
-        // }
+        if(minutes<10){
+            minutes = '0' + minutes;
+        }
+
+
         minute.innerHTML = minutes; //displaying minutes 
         if(seconds<10){
             seconds = '0' + seconds;
@@ -29,51 +37,20 @@ button.addEventListener('click', ()=>{
         second.innerHTML = seconds; // displaying seconds
         console.log(seconds);
         time--;
-        // if(time == 0){
-        //     playSound();
-        // }
         
     }, 1000);
 });
 
 
-function debuggerButton(){
-    console.log("Button clicked ");
-}
 
 
 
-
-
-function startTimer(){
-    console.log("Button clicked");
-    const interval = setInterval(()=>{
-        if(time == 0){
-            clearInterval(interval);
-        }
-        const minutes = Math.floor(time/60);//getting minutes out from total seconds which were previously created by conveting minutes to seconds
-        let seconds = time % 60; // getting remaining seconds from total seconds by using mod;
-        
-        // if(minutes<10){
-        //     minutes = '0' + minutes;
-        // }
-        minute.innerHTML = minutes; //displaying minutes 
-        if(seconds<10){
-            seconds = '0' + seconds;
-        }
-        second.innerHTML = seconds; // displaying seconds
-        console.log(seconds);
-        time--;
-        // if(time == 0){
-        //     playSound();
-        // }
-        
-    }, 1000);
-}
-
-// playSound(){
-//     console.log("Times UP");
-// }
+///plays the timer ended  sound 
+function playSound(){
+    console.log("Times UP");
+    var a = new Audio('Audio/clock-alarm-8761.mp3')
+    a.play();
+};
 
 
 
