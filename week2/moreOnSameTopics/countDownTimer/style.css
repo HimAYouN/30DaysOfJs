@@ -2,38 +2,58 @@ body{
     margin: 0;
     padding: 0;
     background-color: aqua;
+    color: rgb(236, 255, 27);
+    font-family: 'VT323', monospace;
 }
 h1{
-    border: 1px dotted black;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    
+    /* border: 1px dotted black; */
 }
 
 .clockBody{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 40px;
 
 }
 
 .hand{
-    font-size: larger;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 500%;
+    font-family: 'VT323', monospace;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     /* margin: 20px; */
-    padding: 20px;
-    border: 1px dotted black;
-    display: inline-block;
+    /* padding: 20px; */
+    display: inline-flex;
+    /* border: 1px dotted black; */
     /* flex-direction: row; */
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
     height: auto;
     width: auto;
 }
 .button{
+    background-color: aqua;
+    color: rgb(236, 255, 27);
+    border: none;
+    cursor: crosshair;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    height: 50px;
+    width: 300px;
+    transition: 0.3s;
+    font-family: 'VT323', monospace;
+    font-size: 100%;
     /* position: relative; */
 }
-#StartTimer{
-    height: 100px;
-    width: 400px;
+
+.button:hover{
+    background-color: rgb(0, 156, 156);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: 120%;
+    
+    color: rgb(238, 241, 203);
 }
