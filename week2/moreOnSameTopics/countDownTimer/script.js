@@ -7,13 +7,21 @@ const button10 = document.getElementById("StartTimer10");
 const button05 = document.getElementById("StartTimer05");
 
 
-button30.addEventListener('click', (x)=>{
-    // console.log("Hello");
-    if(x==button30){
-        console.log("30");
-    }
+const buttons = document.querySelectorAll('.button');
+
+buttons.forEach(button=>{
+    button.addEventListener('click', function(event){
+        const value = event.target.value;
+        console.log(value);
+        startTimer(value);
+
+
+    });
+});
+
+function startTimer(value){
     ///Setting the time in minutes
-    const minutes = 30;
+    const minutes = value;
     //changing the minutes into seconds
     let time = minutes * 60;
     const interval = setInterval(()=>{
@@ -44,7 +52,47 @@ button30.addEventListener('click', (x)=>{
         time--;
         
     }, 1000);
-});
+}
+
+
+
+
+// button30.addEventListener('click', ()=>{
+//     // console.log("Hello");
+    
+//     ///Setting the time in minutes
+//     const minutes = 30;
+//     //changing the minutes into seconds
+//     let time = minutes * 60;
+//     const interval = setInterval(()=>{
+
+
+//         //clears the interval and calls the playsound function 
+//         if(time == 0){
+//             playSound();
+//             clearInterval(interval);
+//         }
+
+
+
+//         let minutes = Math.floor(time/60);//getting minutes out from total seconds which were previously created by conveting minutes to seconds
+//         let seconds = time % 60; // getting remaining seconds from total seconds by using mod;
+        
+//         if(minutes<10){
+//             minutes = '0' + minutes;
+//         }
+
+
+//         minute.innerHTML = minutes; //displaying minutes 
+//         if(seconds<10){
+//             seconds = '0' + seconds;
+//         }
+//         second.innerHTML = seconds; // displaying seconds
+//         // console.log(seconds);
+//         time--;
+        
+//     }, 1000);
+// });
 
 
 
