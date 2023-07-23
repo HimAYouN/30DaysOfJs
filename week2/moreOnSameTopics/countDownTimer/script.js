@@ -5,10 +5,10 @@ const button = document.getElementById("StartTimer");
 
 
 button.addEventListener('click', ()=>{
-    console.log("Hello");
+    // console.log("Hello");
     
     ///Setting the time in minutes
-    const minutes = 1;
+    const minutes = 30;
     //changing the minutes into seconds
     let time = minutes * 60;
     const interval = setInterval(()=>{
@@ -35,7 +35,7 @@ button.addEventListener('click', ()=>{
             seconds = '0' + seconds;
         }
         second.innerHTML = seconds; // displaying seconds
-        console.log(seconds);
+        // console.log(seconds);
         time--;
         
     }, 1000);
@@ -47,7 +47,7 @@ button.addEventListener('click', ()=>{
 
 ///plays the timer ended  sound 
 function playSound(){
-    console.log("Times UP");
+    // console.log("Times UP");
     var a = new Audio('Audio/clock-alarm-8761.mp3')
     a.play();
 };
