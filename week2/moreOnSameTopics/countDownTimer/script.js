@@ -7,7 +7,7 @@ const button10 = document.getElementById("StartTimer10");
 const button05 = document.getElementById("StartTimer05");
 
 
-button.addEventListener('click', ()=>{
+button30.addEventListener('click', ()=>{
     // console.log("Hello");
     
     ///Setting the time in minutes
