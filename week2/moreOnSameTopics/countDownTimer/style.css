@@ -53,6 +53,21 @@ h1{
     /* position: relative; */
     border-radius: 7%;
 }
+.hidden{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .button:hover{
     background-color: rgba(33, 223, 223, 0.733);
