@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: aqua;
-    color: rgb(236, 255, 27);
+    color: rgb(126, 12, 255);
     font-family: 'VT323', monospace;
 }
 h1{
@@ -36,7 +36,7 @@ h1{
 }
 .button{
     background-color: aqua;
-    color: rgb(236, 255, 27);
+    color: rgb(126, 12, 255);
     border: none;
     cursor: crosshair;
     margin: auto;

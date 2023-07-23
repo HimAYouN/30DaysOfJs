@@ -1,7 +1,10 @@
 const hour = document.getElementById("hourH3");
 const minute = document.getElementById("minuteH3");
 const second = document.getElementById("secondH3");
-const button = document.getElementById("StartTimer");
+const button30 = document.getElementById("StartTimer30");
+const button60 = document.getElementById("StartTimer60");
+const button10 = document.getElementById("StartTimer10");
+const button05 = document.getElementById("StartTimer05");
 
 
 button.addEventListener('click', ()=>{
