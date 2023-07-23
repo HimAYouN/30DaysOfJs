@@ -15,8 +15,11 @@ h1{
 
 .clockBody{
     /* border: 2px solid black; */
+    display: flex;
     margin: 40px;
     transition: 0.3s;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -38,7 +41,6 @@ h1{
     background-color: aqua;
     color: rgb(126, 12, 255);
     border: none;
-    cursor: crosshair;
     margin: auto;
     display: flex;
     align-items: center;
@@ -49,6 +51,7 @@ h1{
     font-family: 'VT323', monospace;
     font-size: 130%;
     /* position: relative; */
+    border-radius: 7%;
 }
 
 .button:hover{
@@ -59,11 +62,8 @@ h1{
     color: rgb(238, 241, 203);
 }
 .clockBody:hover{
-    color: rgba(255, 247, 177, 0.958);
-    cursor: not-allowed;
+    color: rgb(238, 241, 203);
 }
 h1:hover{
-    color: rgb(255, 183, 0);
-    cursor: crosshair;
-    
+    color: rgb(238, 241, 203);
 }

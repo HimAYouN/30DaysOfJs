@@ -7,9 +7,11 @@ const button10 = document.getElementById("StartTimer10");
 const button05 = document.getElementById("StartTimer05");
 
 
-button30.addEventListener('click', ()=>{
+button30.addEventListener('click', (x)=>{
     // console.log("Hello");
-    
+    if(x==button30){
+        console.log("30");
+    }
     ///Setting the time in minutes
     const minutes = 30;
     //changing the minutes into seconds
