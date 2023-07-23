@@ -8,12 +8,15 @@ const button05 = document.getElementById("StartTimer05");
 
 
 const buttons = document.querySelectorAll('.button');
+const newButton = document.querySelectorAll('.newButtons');
 
 buttons.forEach(button=>{
     button.addEventListener('click', function(event){
         const value = event.target.value;
         // console.log(value);
         startTimer(value);
+        hideButtons();
+        newButtons();
         
 
 
@@ -72,4 +75,20 @@ function playSound(){
 
 
 // Hiding Buttons
+function hideButtons(){
+    buttons.forEach(element => {
+        element.classList.toggle('hidden');
+        console.log("done");
+    });
+}
+
+//Displaying new Buttons
+
+function newButtons(){
+    newButton.forEach(element => {
+        element.classList.toggle('hidden');
+        console.log("trigerred");
+    })
+}
+
 
