@@ -1,35 +1,42 @@
 
 var playerScore = 0;
 var computerScore = 0;
+const prompter = document.getElementById('prompter');
+
+
+
+
+
 
 function play(myPlay){
+    console.log(computerScore+" "+playerScore);
     scoreCheck(computerScore, playerScore);
     var comPlay = Math.floor(Math.random()*3)+1;
 
     if(myPlay==1&&comPlay==2){
         // console.log("Computer Won");
         createELE("rock", "Paper", "Computer Won");
-        computerScore++;
+        ++computerScore;
     }else if (myPlay==1&&comPlay==3) {
         // console.log("Player Won");
         createELE("rock", "Scissor", "Player Won");
-        playerScore++;
+        ++playerScore;
     } else if(myPlay== 2&& comPlay==1){
         // console.log("Player Won");
         createELE("paper", "rock", "Player Won");
-        playerScore++;
+        ++playerScore;
     }else if(myPlay==2& comPlay==3){
         // console.log("Computer Won");
         createELE("paper", "Scissor", "Computer Won");
-        computerScore++;
+        ++computerScore;
     }else if(myPlay==3&& comPlay==1){
         // console.log("Computer Won");
         createELE("scissor", "rock", "Computer Won");
-        computerScore++;
+        ++computerScore;
     }else if(myPlay==3&&comPlay==2){
         // console.log("Player Won");
         createELE("scissor", "paper", "Player Won");
-        playerScore++;
+        ++playerScore;
     }else{
         console.log("TIE");
         createELE("Same as computer", "Same as player", "Tied");
@@ -73,17 +80,19 @@ function createELE(dataHuman, dataComputer, result){
 
 
 function scoreCheck(computerScore, playerScore){
-    if(computerScore>4){
+    if(computerScore==3){
         promptDisplayer(1);
-    }else if(playerScore>4){
+    }else if(playerScore==3){
         promptDisplayer(2)
     }
 }
 
 function promptDisplayer(x){
     if(x==1){
-
+        prompter.innerHTML = "Computer Won";
+        console.log("COMputer WON");
     }else if(x==2){
-
+        prompter.innerHTML = "Player Won";
+        console.log("PlaYER WON");
     }
 }
