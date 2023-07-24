@@ -26,6 +26,7 @@ function play(myPlay){
         createELE("scissor", "paper", "Player Won");
     }else{
         console.log("TIE");
+        createELE("Same as computer", "Same as player", "Tied");
     }
 }
 
