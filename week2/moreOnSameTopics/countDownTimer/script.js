@@ -10,12 +10,16 @@ const button05 = document.getElementById("StartTimer05");
 const buttons = document.querySelectorAll('.button');
 const newButton = document.querySelectorAll('.newButtons');
 
+let interval;
+
+
+
 buttons.forEach(button=>{
     button.addEventListener('click', function(event){
         const value = event.target.value;
         // console.log(value);
         startTimer(value);
-        hideButtons();
+        hideShowButtons();
         newButtons();
         
 
@@ -28,13 +32,15 @@ function startTimer(value){
     const minutes = value;
     //changing the minutes into seconds
     let time = minutes * 60;
-    const interval = setInterval(()=>{
+    interval = setInterval(()=>{
 
 
         //clears the interval and calls the playsound function 
         if(time == 0){
             playSound();
             clearInterval(interval);
+            hideShowButtons();
+            newButtons();
         }
 
 
@@ -56,6 +62,7 @@ function startTimer(value){
         time--;
         
     }, 1000);
+    
 }
 
 
@@ -75,10 +82,10 @@ function playSound(){
 
 
 // Hiding Buttons
-function hideButtons(){
+function hideShowButtons(){
     buttons.forEach(element => {
         element.classList.toggle('hidden');
-        console.log("done");
+        // console.log("done");
     });
 }
 
@@ -87,8 +94,26 @@ function hideButtons(){
 function newButtons(){
     newButton.forEach(element => {
         element.classList.toggle('hidden');
-        console.log("trigerred");
+        // console.log("trigerred");
     })
 }
+
+
+
+/// Functions for restart button 
+document.getElementById('RestartButton').addEventListener('click', ()=>{
+    // console.log("Hello");    
+    clearInterval(interval);
+    hideShowButtons();
+    newButtons();
+    hour.innerText = '00';
+    minute.innerText = '00';
+    second.innerText = '00';
+
+});
+
+
+//Functions for Pause Button 
+
 
 

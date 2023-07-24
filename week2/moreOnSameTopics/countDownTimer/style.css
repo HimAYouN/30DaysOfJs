@@ -96,6 +96,14 @@ h1{
     
     color: rgb(238, 241, 203);
 }
+.newButtons:hover{
+    background-color: rgba(33, 223, 223, 0.733);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: 140%;
+    
+    color: rgb(238, 241, 203);
+}
+
 .clockBody:hover{
     color: rgb(238, 241, 203);
 }
