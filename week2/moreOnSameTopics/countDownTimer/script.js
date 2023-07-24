@@ -39,8 +39,11 @@ function startTimer(value){
         
         
         //clears the interval and calls the playsound function 
-        if(time == 0){
+        if(time == 1){
             playSound();
+           
+        }
+        if(time == 0){
             clearInterval(interval);
             hideShowButtons();
             newButtons();
