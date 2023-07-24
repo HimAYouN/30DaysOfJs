@@ -11,7 +11,7 @@ const buttons = document.querySelectorAll('.button');
 const newButton = document.querySelectorAll('.newButtons');
 
 let interval;
-
+var isPaused = false;
 
 
 buttons.forEach(button=>{
@@ -32,9 +32,12 @@ function startTimer(value){
     const minutes = value;
     //changing the minutes into seconds
     let time = minutes * 60;
+
+    
     interval = setInterval(()=>{
-
-
+        if(!isPaused){
+        
+        
         //clears the interval and calls the playsound function 
         if(time == 0){
             playSound();
@@ -61,7 +64,9 @@ function startTimer(value){
         // console.log(seconds);
         time--;
         
+    }
     }, 1000);
+
     
 }
 
@@ -114,6 +119,25 @@ document.getElementById('RestartButton').addEventListener('click', ()=>{
 
 
 //Functions for Pause Button 
+document.getElementById('PauseButton').addEventListener('click', ()=>{
+    // console.log("Pausing");
+    isPaused = true;
+    pauseResumeButton();
+});
 
+
+//Functions for Resume Button 
+
+document.getElementById('ResumeButton').addEventListener('click', ()=>{
+    isPaused = false;
+    pauseResumeButton();
+
+});
+
+
+function pauseResumeButton(){
+    document.getElementById('PauseButton').classList.toggle('hidden');
+    document.getElementById('ResumeButton').classList.toggle('hidden');
+}
 
 

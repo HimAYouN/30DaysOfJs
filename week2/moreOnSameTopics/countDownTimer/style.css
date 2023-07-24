@@ -69,7 +69,22 @@ h1{
     /* position: relative; */
     border-radius: 7%;
 }
-
+.newButtonsP{
+    background-color: aqua;
+    color: rgb(126, 12, 255);
+    border: none;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 300px;
+    transition: 0.3s;
+    font-family: 'VT323', monospace;
+    font-size: 130%;
+    /* position: relative; */
+    border-radius: 7%;
+}
 
 
 
@@ -103,6 +118,15 @@ h1{
     
     color: rgb(238, 241, 203);
 }
+.newButtonsP:hover{
+    background-color: rgba(33, 223, 223, 0.733);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: 140%;
+    
+    color: rgb(238, 241, 203);
+}
+
+
 
 .clockBody:hover{
     color: rgb(238, 241, 203);
