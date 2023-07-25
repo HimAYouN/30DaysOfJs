@@ -33,8 +33,10 @@ h3{
     justify-content: center;
 }
 .button{
-    
-    background-color: #DFD7BF;
+    border-radius: 20%;
+    border-style: none;
+    background: rgb(223,215,191);
+    background: radial-gradient(circle, rgba(223,215,191,1) 0%, rgba(242,234,211,1) 35%, rgba(223,215,191,1) 100%);
     color: #3F2305;
     margin: 10px;
     padding: 10px;
