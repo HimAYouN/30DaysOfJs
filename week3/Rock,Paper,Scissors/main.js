@@ -72,7 +72,7 @@ function createELE(dataHuman, dataComputer, result){
 
     element1.appendChild(handHuman);
     element2.appendChild(computerHand);
-    element3.appendChild(resultConst)
+    element3.appendChild(resultConst);
     handHuman.innerHTML = dataHuman;
     computerHand.innerHTML = dataComputer;
     resultConst.innerHTML = result;

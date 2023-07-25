@@ -1,12 +1,70 @@
+/* background-color: #F5F5F5;
+color: #3F2305;
+color: #DFD7BF;
+color: #F2EAD3; */
+
+
 body{
     margin: 0;
     padding: 0;
+    background-color: #F2EAD3;
+    color: #3F2305;
 
 }
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid brown; */
+}
+
+.buttonContainer{
+    color: #3F2305;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .button{
+    
+    background-color: #DFD7BF;
+    color: #3F2305;
     margin: 10px;
     padding: 10px;
 }
 .imageClass{
     height: 100px;
 }
+
+
+.container{
+    
+    
+    color: #3F2305;
+    display: flex;
+    margin: auto;;
+    columns: 40px;
+}
+.scorer{
+    
+    background-color: #DFD7BF;
+    /* border: 1px dotted black; */
+    font-size: large;
+    width: 1000px;
+    height: 500px;
+    margin: 30px;
+    padding: auto;
+}
+
+
+
+
+
+.hidden{display: none;}
