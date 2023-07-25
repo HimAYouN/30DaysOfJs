@@ -41,6 +41,7 @@ function play(myPlay){
         console.log("TIE");
         createELE("Same as computer", "Same as player", "Tied");
     }
+    
 }
 
 
@@ -88,6 +89,7 @@ function scoreCheck(computerScore, playerScore){
 }
 
 function promptDisplayer(x){
+    prompter.classList.toggle('hidden');
     if(x==1){
         prompter.innerHTML = "Computer Won";
         console.log("COMputer WON");

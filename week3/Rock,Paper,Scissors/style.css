@@ -60,13 +60,18 @@ h3{
     /* border: 1px dotted black; */
     font-size: large;
     width: 1000px;
-    height: 500px;
+    /* height: 500px; */
     margin: 30px;
     padding: auto;
 }
 
 
 
+.prompter{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
-.hidden{display: none;}
+/* .hidden{display: none;} */
