@@ -71,6 +71,8 @@ function createELE(dataHuman, dataComputer, result){
     const element2 = document.getElementById('ComputeHand');
     const element3 = document.getElementById('resultSection');
 
+
+
     element1.appendChild(handHuman);
     element2.appendChild(computerHand);
     element3.appendChild(resultConst);
@@ -93,8 +95,17 @@ function promptDisplayer(x){
     if(x==1){
         prompter.innerHTML = "Computer Won";
         console.log("COMputer WON");
+        
     }else if(x==2){
         prompter.innerHTML = "Player Won";
         console.log("PlaYER WON");
     }
+    deleter();
+}
+
+
+function deleter(){
+
+    document.getElementsByTagName('.li').classList.add('deleteAll');
+
 }
