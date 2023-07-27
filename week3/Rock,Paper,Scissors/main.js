@@ -41,6 +41,7 @@ function play(myPlay){
         console.log("TIE");
         createELE("Same as computer", "Same as player", "Tied");
     }
+    displayScore();
     
 }
 
@@ -81,7 +82,7 @@ function createELE(dataHuman, dataComputer, result){
     resultConst.innerHTML = result;
 }
 
-
+//score checking machine
 function scoreCheck(computerScore, playerScore){
     if(computerScore==3){
         promptDisplayer(1);
@@ -90,6 +91,8 @@ function scoreCheck(computerScore, playerScore){
     }
 }
 
+
+//displaying who won
 function promptDisplayer(x){
     prompter.classList.toggle('hidden');
     if(x==1){
@@ -105,9 +108,22 @@ function promptDisplayer(x){
 
 
 function deleter(){
+    //adding class to each li tag
     const lis = document.querySelectorAll('li');
     console.log(lis);
      lis.forEach(element => {
         element.classList.add('classHider');
      });
+     playerScore = 0;
+     computerScore= 0;
+    //  const element1 = document.getElementById('humanHand');
+    //  lis.forEach(element=>{
+    //     element1.removeChild(element);
+    //  })
+}
+
+function displayScore(){
+    document.getElementById('playerScore').innerHTML = playerScore;
+    document.getElementById('computerScore').innerHTML = computerScore;
+    document.getElementById('dotdot').innerHTML  = ":";
 }

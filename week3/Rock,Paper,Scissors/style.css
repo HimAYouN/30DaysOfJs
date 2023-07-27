@@ -17,12 +17,31 @@ h1{
     justify-content: center;
 
 }
-
+.pngDiv{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.pngClasses{
+    margin: 10px;
+    height: 30px;
+}
+.scoreDiv{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
 h3{
+    margin-left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     /* border: 1px solid brown; */
+}
+h2{
+    margin: 10px;
+    padding: auto;
 }
 
 .buttonContainer{
@@ -72,7 +91,7 @@ h3{
     justify-content: center;
 }
 
-/* .hidden{display: none;} */
+.classHider{display: none;}
 
 
 .button:hover{
