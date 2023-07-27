@@ -98,10 +98,12 @@ function promptDisplayer(x){
     if(x==1){
         prompter.innerHTML = "Computer Won";
         console.log("COMputer WON");
+        prompter.style.color = "red";
         
     }else if(x==2){
         prompter.innerHTML = "Player Won";
         console.log("PlaYER WON");
+        prompter.style.color = "blue";
     }
     deleter();
 }
