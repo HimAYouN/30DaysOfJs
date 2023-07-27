@@ -105,7 +105,9 @@ function promptDisplayer(x){
 
 
 function deleter(){
-
-    document.getElementsByTagName('.li').classList.add('deleteAll');
-
+    const lis = document.querySelectorAll('li');
+    console.log(lis);
+     lis.forEach(element => {
+        element.classList.add('classHider');
+     });
 }
