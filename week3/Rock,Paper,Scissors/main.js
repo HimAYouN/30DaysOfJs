@@ -127,5 +127,5 @@ function deleter(){
 function displayScore(){
     document.getElementById('playerScore').innerHTML = playerScore;
     document.getElementById('computerScore').innerHTML = computerScore;
-    document.getElementById('dotdot').innerHTML  = ":";
+    // document.getElementById('dotdot').innerHTML  = ":";
 }

@@ -17,8 +17,17 @@ h1, p{
     justify-content: center;
 
 }
+.scoreMenu{
+    display: flex;
+    /* width: 50%; */
+    border: 1px solid aqua;
+    align-items: center;
+    justify-content: center;
+}
+/* .scoretxt{
+     margin-top: 50px; 
+} */
 .pngDiv{
-    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
@@ -32,8 +41,12 @@ h1, p{
     justify-content: center;
     
 }
+
+.sperator{
+    width: 10px;
+}
 h3{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     display: flex;
     align-items: center;
     justify-content: center;
