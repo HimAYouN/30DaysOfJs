@@ -35,11 +35,11 @@ h3{
 .button{
     border-radius: 20%;
     border-style: none;
-    background: rgb(223,215,191);
-    background: radial-gradient(circle, rgba(223,215,191,1) 0%, rgba(242,234,211,1) 35%, rgba(223,215,191,1) 100%);
+    background-color: #F2EAD3;
     color: #3F2305;
     margin: 10px;
     padding: 10px;
+    transition: 0.3s;
 }
 .imageClass{
     height: 100px;
@@ -47,8 +47,6 @@ h3{
 
 
 .container{
-    
-    
     color: #3F2305;
     display: flex;
     margin: auto;;
@@ -75,3 +73,11 @@ h3{
 }
 
 /* .hidden{display: none;} */
+
+
+.button:hover{
+    height: 20%;
+    background: rgb(223,215,191);
+    background: radial-gradient(circle, rgba(223,215,191,1) 0%, rgba(242,234,211,1) 35%, rgba(223,215,191,1) 100%);
+    
+}
