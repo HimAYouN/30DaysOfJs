@@ -11,7 +11,7 @@ body{
     color: #3F2305;
 
 }
-h1{
+h1, p{
     display: flex;
     align-items: center;
     justify-content: center;
