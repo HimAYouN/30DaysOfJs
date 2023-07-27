@@ -17,10 +17,13 @@ h1, p{
     justify-content: center;
 
 }
+.note{
+    color: red;
+}
 .scoreMenu{
     display: flex;
     /* width: 50%; */
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
     align-items: center;
     justify-content: center;
 }
