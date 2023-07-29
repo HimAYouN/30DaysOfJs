@@ -115,5 +115,7 @@ h2{
     height: 20%;
     background: rgb(223,215,191);
     background: radial-gradient(circle, rgba(223,215,191,1) 0%, rgba(242,234,211,1) 35%, rgba(223,215,191,1) 100%);
+    box-shadow: 10px 10px 10px black,
+     -10px -10px 10px white;
     
 }
