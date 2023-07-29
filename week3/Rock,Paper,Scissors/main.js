@@ -9,7 +9,7 @@ const prompter = document.getElementById('prompter');
 
 
 function play(myPlay){
-    console.log(computerScore+" "+playerScore);
+    // console.log(computerScore+" "+playerScore);
     var comPlay = Math.floor(Math.random()*3)+1;
     
     if(myPlay==1&&comPlay==2){
@@ -37,7 +37,7 @@ function play(myPlay){
         createELE("scissor", "paper", "Player Won");
         ++playerScore;
     }else{
-        console.log("TIE");
+        // console.log("TIE");
         createELE("Same as computer", "Same as player", "Tied");
     }
     displayScore();
@@ -97,12 +97,12 @@ function promptDisplayer(x){
     prompter.classList.toggle('hidden');
     if(x==1){
         prompter.innerHTML = "Computer Won";
-        console.log("COMputer WON");
+        // console.log("COMputer WON");
         prompter.style.color = "red";
         
     }else if(x==2){
         prompter.innerHTML = "Player Won";
-        console.log("PlaYER WON");
+        // console.log("PlaYER WON");
         prompter.style.color = "blue";
     }
     deleter();
@@ -112,7 +112,7 @@ function promptDisplayer(x){
 function deleter(){
     //adding class to each li tag
     const lis = document.querySelectorAll('li');
-    console.log(lis);
+    // console.log(lis);
      lis.forEach(element => {
         element.classList.add('classHider');
      });
