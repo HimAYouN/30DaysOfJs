@@ -10,9 +10,8 @@ const prompter = document.getElementById('prompter');
 
 function play(myPlay){
     console.log(computerScore+" "+playerScore);
-    scoreCheck(computerScore, playerScore);
     var comPlay = Math.floor(Math.random()*3)+1;
-
+    
     if(myPlay==1&&comPlay==2){
         // console.log("Computer Won");
         createELE("rock", "Paper", "Computer Won");
@@ -41,6 +40,7 @@ function play(myPlay){
         console.log("TIE");
         createELE("Same as computer", "Same as player", "Tied");
     }
+    scoreCheck(computerScore, playerScore);
     displayScore();
     
 }
