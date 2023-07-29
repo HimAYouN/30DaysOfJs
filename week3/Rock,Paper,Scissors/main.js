@@ -40,8 +40,8 @@ function play(myPlay){
         console.log("TIE");
         createELE("Same as computer", "Same as player", "Tied");
     }
-    scoreCheck(computerScore, playerScore);
     displayScore();
+    scoreCheck(computerScore, playerScore);
     
 }
 
