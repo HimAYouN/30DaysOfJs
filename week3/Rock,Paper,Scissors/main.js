@@ -123,7 +123,9 @@ function deleter(){
         element.classList.add('classHider');
      });
 
-
+     buttonShower();
+     
+    document.getElementById('deleterButton').classList.toggle('classHider');
     //  const element1 = document.getElementById('humanHand');
     //  lis.forEach(element=>{
     //     element1.removeChild(element);
@@ -138,10 +140,18 @@ function displayScore(){
     // document.getElementById('dotdot').innerHTML  = ":";
 }
 
+const selector = (id)=>{
+    return document.getElementById(id);
+}
 
 //deleter button in html
 function deleterShower(){
     document.getElementById('deleterButton').classList.toggle('classHider');
-    
+    buttonShower();
+}
 
+function buttonShower(){
+    selector("rock").classList.toggle('buttonHider');
+    selector("paper").classList.toggle('buttonHider');
+    selector("scissor").classList.toggle('buttonHider');
 }
