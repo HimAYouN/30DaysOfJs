@@ -124,14 +124,10 @@ function deleter(){
      });
 
      buttonShower();
-     
     document.getElementById('deleterButton').classList.toggle('classHider');
-    //  const element1 = document.getElementById('humanHand');
-    //  lis.forEach(element=>{
-    //     element1.removeChild(element);
-    //  })
-    
     displayScore();
+    
+    prompter.innerHTML = "";
 }
 
 function displayScore(){
@@ -148,6 +144,7 @@ const selector = (id)=>{
 function deleterShower(){
     document.getElementById('deleterButton').classList.toggle('classHider');
     buttonShower();
+
 }
 
 function buttonShower(){
