@@ -86,8 +86,10 @@ function createELE(dataHuman, dataComputer, result){
 function scoreCheck(computerScore, playerScore){
     if(computerScore==3){
         promptDisplayer(1);
+        deleterShower();
     }else if(playerScore==3){
-        promptDisplayer(2)
+        promptDisplayer(2);
+        deleterShower();
     }
 }
 
@@ -105,27 +107,41 @@ function promptDisplayer(x){
         // console.log("PlaYER WON");
         prompter.style.color = "blue";
     }
-    deleter();
+    /// deleter Button to be appeared
 }
 
 
 function deleter(){
     //adding class to each li tag
+    playerScore = 0;
+    computerScore= 0;
+
+
     const lis = document.querySelectorAll('li');
     // console.log(lis);
      lis.forEach(element => {
         element.classList.add('classHider');
      });
-     playerScore = 0;
-     computerScore= 0;
+
+
     //  const element1 = document.getElementById('humanHand');
     //  lis.forEach(element=>{
     //     element1.removeChild(element);
     //  })
+    
+    displayScore();
 }
 
 function displayScore(){
     document.getElementById('playerScore').innerHTML = playerScore;
     document.getElementById('computerScore').innerHTML = computerScore;
     // document.getElementById('dotdot').innerHTML  = ":";
+}
+
+
+//deleter button in html
+function deleterShower(){
+    document.getElementById('deleterButton').classList.toggle('classHider');
+    
+
 }
