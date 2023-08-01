@@ -6,8 +6,16 @@ body {
     color: white;
 }
 
+h1{
+    margin: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
 
 .clockBody{
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,11 +26,29 @@ body {
 .hands{
     margin: auto;
     /* padding: auto; */
-    background-color: rgb(120, 120, 120);
+    background-color: rgb(81, 81, 81);
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;
+    /* justify-content: center; */
+    /* align-items: center;  */
+    height: 150px;
+    width: 150px;
+    transform: rotate(0deg);
+    
 }
+
+.hands {
+    transition: ease .3s ;
+    animation: hello 1s infinite;
+
+  }
+  @keyframes hello{
+    0% {background-color: rgb(114, 114, 114);}
+    100% { background-color: black;}
+  }
+  .hands:hover{
+    transform: rotate(10deg);
+  }
+
+
+
 

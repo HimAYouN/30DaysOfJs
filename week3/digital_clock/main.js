@@ -7,13 +7,8 @@ const second = document.getElementById("second");
 //   minute.innerHTML = date.getMinutes();
 //   second.innerHTML = date.getSeconds();
 // }
-setInterval(function dateDisplayer() {
+var interval = setInterval(function dateDisplayer() {
   var date = new Date();
-    
-
-
-
-
   hour.innerHTML = date.getHours();
   minute.innerHTML = date.getMinutes();
   
