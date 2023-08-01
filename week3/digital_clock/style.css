@@ -39,6 +39,7 @@ h1{
 .hands {
     transition: ease .3s ;
     animation: hello 1s infinite;
+    margin-bottom: 20px;
 
   }
   @keyframes hello{
@@ -52,12 +53,27 @@ h1{
 
 
   .quotesDiv{
+    background-color: violet;
     border: 1px solid green;
-    position: relative;
-    width: 50%;
+    width: 40%;
+    display: grid;
+    margin: auto;
     align-items: center;
     
   }
+.quoteHeader{
+  color: black;
+}
 
+  .button{
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: none;
+  }
 
+  img{
+    background-color: white;
+    height: 30px;
+  }
 

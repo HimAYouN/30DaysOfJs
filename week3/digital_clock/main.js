@@ -98,4 +98,4 @@ var quotes = [
     quoteEle.innerHTML = quotes[index].text;
     authorEle.innerHTML = "Author: " + quotes[index].author;
   }
-  quoteGenerator();
+  
