@@ -86,4 +86,16 @@ var quotes = [
       "text": "Today is the tomorrow we worried about yesterday.",
       "author":  "type.fit"
     }
-  ]
+  ];
+
+
+    const quoteEle = document.getElementById('quoteDisplayer');
+  const authorEle = document.getElementById('authorName');
+
+  function quoteGenerator(){
+    var index = Math.floor(Math.random()*quotes.length);
+    console.log(index);
+    quoteEle.innerHTML = quotes[index].text;
+    authorEle.innerHTML = "Author: " + quotes[index].author;
+  }
+  quoteGenerator();

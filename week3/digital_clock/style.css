@@ -51,5 +51,13 @@ h1{
   }
 
 
+  .quotesDiv{
+    border: 1px solid green;
+    position: relative;
+    width: 50%;
+    align-items: center;
+    
+  }
+
 
 
