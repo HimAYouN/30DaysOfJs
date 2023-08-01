@@ -30,8 +30,8 @@ h1{
     text-align: center;
     /* justify-content: center; */
     /* align-items: center;  */
-    height: 150px;
-    width: 150px;
+    height:100px;
+    width: 100px;
     transform: rotate(0deg);
     
 }
@@ -44,6 +44,7 @@ h1{
   @keyframes hello{
     0% {background-color: rgb(114, 114, 114);}
     100% { background-color: black;}
+    
   }
   .hands:hover{
     transform: rotate(10deg);
