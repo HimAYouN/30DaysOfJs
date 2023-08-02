@@ -58,7 +58,7 @@ h1{
     background-color: violet;
     border: 1px solid green;
     border-radius: 50px;
-    width: 40%;
+    width: 390px;
     display: grid;
     margin-top: 150px;
     margin: auto;
@@ -86,5 +86,9 @@ h1{
     background-color: white;
     height: 30px;
     border-radius: 25px;
+  }
+
+  .space{
+    height: 200px;
   }
 
