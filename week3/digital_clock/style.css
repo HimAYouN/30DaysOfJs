@@ -5,7 +5,14 @@ body {
     background-color: black;
     color: white;
 }
-
+h1{
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
 h2{
     display: flex;
     justify-content: center; 
@@ -25,11 +32,7 @@ h2{
 
 .hands{
     margin: 10px;
-    /* padding: auto; */
     background-color: rgb(81, 81, 81);
-    /* text-align: center;
-    justify-content: center; 
-    align-items: center; */
     text-align: center; 
     height:100px;
     width: 100px;
@@ -39,10 +42,10 @@ h2{
 
 .hands {
     transition: ease .3s ;
-    animation: hello 1s infinite;
+    animation: tilit 1s infinite;
 
   }
-  @keyframes hello{
+  @keyframes tilit{
     0% {background-color: black;}
     100% { background-color:rgb(114, 114, 114);}
     
