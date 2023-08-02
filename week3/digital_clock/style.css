@@ -24,7 +24,7 @@ h1{
 }
 
 .hands{
-    margin: auto;
+    margin: 10px;
     /* padding: auto; */
     background-color: rgb(81, 81, 81);
     text-align: center;
@@ -33,7 +33,7 @@ h1{
     text-align: center;
     height:100px;
     width: 100px;
-    transform: rotate(0deg);
+    transform: rotate(0deg); 
     border-radius: 20px;
     
 }
@@ -45,17 +45,18 @@ h1{
 
   }
   @keyframes hello{
-    0% {background-color: rgb(114, 114, 114);}
-    100% { background-color: black;}
+    0% {background-color: black;}
+    100% { background-color:rgb(114, 114, 114);}
     
   }
   .hands:hover{
-    transform: rotate(10deg);
+    transform: rotate(20deg);
   }
 
 
-  .quotesDiv{
-    background-color: violet;
+.quotesDiv{
+    background: rgb(164,135,158);
+    background: linear-gradient(0deg, rgba(164,135,158,1) 0%, rgba(255,107,226,1) 16%, rgba(241,228,238,1) 100%);
     border: 1px solid green;
     border-radius: 50px;
     width: 390px;
