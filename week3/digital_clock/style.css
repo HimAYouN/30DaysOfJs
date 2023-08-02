@@ -28,11 +28,13 @@ h1{
     /* padding: auto; */
     background-color: rgb(81, 81, 81);
     text-align: center;
-    /* justify-content: center; */
-    /* align-items: center;  */
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
     height:100px;
     width: 100px;
     transform: rotate(0deg);
+    border-radius: 20px;
     
 }
 
@@ -55,8 +57,10 @@ h1{
   .quotesDiv{
     background-color: violet;
     border: 1px solid green;
+    border-radius: 50px;
     width: 40%;
     display: grid;
+    margin-top: 150px;
     margin: auto;
     align-items: center;
     
@@ -64,16 +68,23 @@ h1{
 .quoteHeader{
   color: black;
 }
+.quoteCentered{
+  margin: 05px 0 0px  30px;
+}
 
   .button{
+    display: flex;margin: auto 20px 15px auto;
+    border-radius: 25px;
     text-decoration: none;
     background-color: rgb(255, 255, 255);
     color: white;
     border: none;
+    width: 40px;
   }
 
   img{
     background-color: white;
     height: 30px;
+    border-radius: 25px;
   }
 
