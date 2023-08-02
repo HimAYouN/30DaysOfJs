@@ -94,7 +94,7 @@ var quotes = [
 
   function quoteGenerator(){
     var index = Math.floor(Math.random()*quotes.length);
-    console.log(index);
+    // console.log(index);
     quoteEle.innerHTML = quotes[index].text;
     authorEle.innerHTML = "Author: " + quotes[index].author;
   }

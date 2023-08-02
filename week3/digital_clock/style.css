@@ -6,19 +6,19 @@ body {
     color: white;
 }
 
-h1{
-    margin: auto;
+h2{
     display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
+    
 }
 
 .clockBody{
     margin-top: 70px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+     justify-content: center;
+     text-align: center;
+      
     font-size: larger;
 
 }
@@ -27,13 +27,12 @@ h1{
     margin: 10px;
     /* padding: auto; */
     background-color: rgb(81, 81, 81);
-    text-align: center;
+    /* text-align: center;
     justify-content: center; 
-    align-items: center; 
-    text-align: center;
+    align-items: center; */
+    text-align: center; 
     height:100px;
     width: 100px;
-    transform: rotate(0deg); 
     border-radius: 20px;
     
 }
@@ -41,7 +40,6 @@ h1{
 .hands {
     transition: ease .3s ;
     animation: hello 1s infinite;
-    margin-bottom: 20px;
 
   }
   @keyframes hello{
