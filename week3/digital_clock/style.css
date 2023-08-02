@@ -73,18 +73,21 @@ h1{
 }
 
   .button{
-    display: flex;margin: auto 20px 15px auto;
+    display: flex;
+    margin: auto 20px 15px auto;
     border-radius: 25px;
     text-decoration: none;
     background-color: rgb(255, 255, 255);
     color: white;
     border: none;
     width: 40px;
+    /* height: 40px; */
   }
 
   img{
     background-color: white;
     height: 30px;
+    /* width: 30px; */
     border-radius: 25px;
   }
 
