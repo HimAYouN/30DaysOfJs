@@ -1,3 +1,2 @@
-const imgId = document.getElementById('imageID');
-
-imgId
+let imgId = document.getElementById('imageID');
+console.log('hello')
