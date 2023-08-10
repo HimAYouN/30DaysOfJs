@@ -1,13 +1,13 @@
 
-console.log("Hi");
 
+// function y () {
+//     // console.log("Window");
+//     document.querySelector('h1').innerHTML = 'My Name';
+    
+// }
 
-function y () {
-    console.log("Window");
-    setTimeout(function x(){
-        console.log("Hello");
-    }, 2000);
-
-}
-
-setTimeout(y, 1000);
+// function removeTimeFnct(){
+//     clearTimeout(a);
+//     console.log("stopped")
+// }
+// const a = setTimeout(y, 3000);
