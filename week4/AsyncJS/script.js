@@ -15,20 +15,27 @@
 
 
 /////////////////Part 2/////////////
-const interval = null;
-var i = 0;
-function startTimerFnct(){
-    interval = setInterval(function timer(){
-        console.log("Hitesh", i++)
-    }, 1000);
-}
 
-function removeTimeFnct(){
-    clearInterval(interval);
-    console.log("Working");
-}
+// var i = 0;
+// function startTimerFnct(){
+//     setInterval(timer, 1000);
+// }
+// function timer(){
+//     console.log("HI"+ i++);
+// }
+// const interval = setInterval(timer, 1000);
+
+// function removeTimeFnct(){
+//     clearInterval(interval);
+//     console.log("Working");
+// }
 
 
 // const timer= function(){
     
 // }
+
+var i = 0; 
+const interval = setInterval(() => {
+    console.log("Hello" + i++);
+}, 1000);
