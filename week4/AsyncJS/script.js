@@ -50,9 +50,12 @@
 
 let intervalID;
 function startTimerFnct() {
-    intervalID = setInterval(()=>{
-        document.body.style.backgroundColor = randomColor();
-    },1000)
+    if(!intervalID){
+        intervalID = setInterval(()=>{
+            document.body.style.backgroundColor = randomColor();
+        },1000)
+    }
+    
 }
 
 function removeTimeFnct(){
