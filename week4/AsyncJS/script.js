@@ -35,7 +35,28 @@
     
 // }
 
-var i = 0; 
-const interval = setInterval(() => {
-    console.log("Hello" + i++);
-}, 1000);
+
+///Project 1 /// Color changes ever 1 sec////
+    /// Generate Random color
+    const randomColor = function (){
+        const hex = "0123456789ABCDEF";
+        let color = '#' 
+        for(let i = 0; i<6; i++){
+            color += hex[Math.floor(Math.random()*16)];
+        }
+        return color;
+    }
+
+
+let intervalID;
+function startTimerFnct() {
+    intervalID = setInterval(()=>{
+        document.body.style.backgroundColor = randomColor();
+    },1000)
+}
+
+function removeTimeFnct(){
+    // console.log("stop")
+    clearInterval(intervalID);
+    intervalID = null;
+}
