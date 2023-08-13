@@ -63,6 +63,7 @@ h2{
     /* border: 1px solid green; */
     border-radius: 30px;
     width: 450px;
+    height: 200px;
     display: grid;
     margin-top: 100px;
     margin: auto;
