@@ -59,12 +59,12 @@ h2{
 
 .quotesDiv{
     background: rgb(164,135,158);
-    background: linear-gradient(0deg, rgba(164,135,158,1) 0%, rgba(255,107,226,1) 16%, rgba(241,228,238,1) 100%);
-    border: 1px solid green;
-    border-radius: 50px;
-    width: 390px;
+    background: linear-gradient(0deg, rgb(255, 165, 237) 0%, rgb(255, 71, 218) 100%);
+    /* border: 1px solid green; */
+    border-radius: 30px;
+    width: 450px;
     display: grid;
-    margin-top: 150px;
+    margin-top: 100px;
     margin: auto;
     align-items: center;
     
@@ -96,6 +96,6 @@ h2{
   }
 
   .space{
-    height: 200px;
+    height: 150px;
   }
 
