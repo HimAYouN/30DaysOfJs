@@ -27,6 +27,7 @@ h1{
 
 
 .atag:hover{
+    color: black;
     box-shadow: 2px 2px 10px white,
      -2px -2px 10px aqua;
      background-color: aqua;
