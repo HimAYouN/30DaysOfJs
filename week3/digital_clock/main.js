@@ -20,6 +20,15 @@ function dateFetcher() {
   return date.getTime();
 }
 
+
+const randomColor = function (){
+  const hex = "0123456789ABCDEF";
+  let color = '#' 
+  for(let i = 0; i<6; i++){
+      color += hex[Math.floor(Math.random()*16)];
+  }
+  return color;
+}
 var quotes = [
   {
     text: "Genius is one percent inspiration and ninety-nine percent perspiration.",
@@ -254,5 +263,12 @@ function quoteGenerator() {
   // console.log(index);
   quoteEle.innerHTML = quotes[index].text;
   authorEle.innerHTML = "Author: " + quotes[index].author;
+  document.getElementById('quotesDivID').style.backgroundImage = 'linear-gradient(100deg, ' + randomColor()+ '  ,' + randomColor()+')';
 }
 quoteGenerator();
+
+
+
+
+
+
