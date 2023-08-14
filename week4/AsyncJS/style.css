@@ -1,4 +1,27 @@
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;    
+}
 .button {
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 20px;
     height: 50px;
     width: 50px;
+    transition: 0.2s;
 }
+.button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 
+    5px 3px 5px white
+    ,-5px -3px 5px white
+    /* ,5px -3px 5px white
+    ,-5px 3px 5px white */
+    ;
+
+    box-shadow: inset;
+}
+
