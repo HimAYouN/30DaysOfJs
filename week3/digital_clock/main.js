@@ -11,8 +11,8 @@ var interval = setInterval(function dateDisplayer() {
   var date = new Date();
   hour.innerHTML = date.getHours();
   minute.innerHTML = date.getMinutes();
-
   second.innerHTML = date.getSeconds();
+
 }, 1000);
 
 function dateFetcher() {
@@ -263,8 +263,9 @@ function quoteGenerator() {
   // console.log(index);
   quoteEle.innerHTML = quotes[index].text;
   authorEle.innerHTML = "Author: " + quotes[index].author;
-  document.getElementById('quotesDivID').style.backgroundImage = 'linear-gradient(100deg, ' + randomColor()+ '  ,' + randomColor()+')';
+  document.getElementById('quotesDivID').style.backgroundImage = 'linear-gradient(50deg, ' + randomColor()+ '  ,' + randomColor()+')';
 }
+
 quoteGenerator();
 
 

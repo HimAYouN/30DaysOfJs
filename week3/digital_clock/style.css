@@ -48,9 +48,8 @@ h2{
 
   }
   @keyframes tilit{
-    0% {background-color: black;}
+    0% {background-color: rgb(223, 223, 223);}
     100% { background-color:rgb(114, 114, 114);}
-    
   }
   .hands:hover{
     transform: rotate(20deg);
