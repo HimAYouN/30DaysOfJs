@@ -1,13 +1,6 @@
-let imgId = document.getElementById('imageID');
-let button = document.getElementById('button');
-let imgcls = document.getElementsByClassName('imgClass');
-
-function SlideShow(){
-    for(i = 0; i<imgcls.length;i++){
-        imgcls[i].style.display = "";
-    }
-}
-
-button.addEventListener('click', ()=>{
-    SlideShow();
-});
+const slides = document.querySelectorAll('.slide');
+// console.log(slides)
+var counter = 0;
+ slides.forEach((slide, index) => {
+    slide.style.left = '${index * 100}%'
+ });
