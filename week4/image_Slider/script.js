@@ -3,15 +3,17 @@ const slides = document.querySelectorAll('.slide');
 var n = 0;
 let nextButton = document.getElementById('nextButton');
 nextButton.addEventListener('click', ()=>{
-    n = Math.floor(Math.random()*slides.length);
-    for(var i = 0; i<slides.length; i++){
-        if(i!=n){
-            slides[i].classList.add('slide');
-        }
+    if(n==slides.length){
+        slides[n-1].classList.toggle('display');
+        slides[n-1].classList.toggle('slide');
+        n=0;
+        
+
     }
-    console.log(n);
+    console.log(n)
     slides[n].classList.toggle('display');
     slides[n].classList.toggle('slide');
+    n++;
 
 })
 
