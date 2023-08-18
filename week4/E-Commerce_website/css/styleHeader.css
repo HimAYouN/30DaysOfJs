@@ -17,7 +17,8 @@ img{
     object-fit: cover;
     object-position: 100%;
     margin-top: -20px;
-    height: 750px;
+    height: 750px;  
+    zoom: 100%;
     
 }
 .heading1{
@@ -26,6 +27,7 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 .heading2{
@@ -37,6 +39,7 @@ img{
     /* border: 1px solid pink; */
     width: 500px;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .heading3{
     position: absolute;
@@ -44,4 +47,5 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
