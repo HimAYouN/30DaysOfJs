@@ -1,0 +1,38 @@
+.firstPage{
+    background-color: rgb(244, 192, 244);
+    height: 800px;
+}
+
+.pinkSection{
+    background-color: rgb(255, 238, 206);
+    position: absolute;
+    top: 120%;
+    left: 10%;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+.pinkSection img{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100%;
+    /* margin-top: -20px; */
+    height: 300px;  
+    /* left: 10%; */
+    /* zoom-left: 130% ; */
+}
+.pinkSection p, button{
+text-align: left;
+margin: 10px auto auto 10px;
+}
+
+
+.pinkImg{
+    width: 400px;
+    position: absolute;
+    top: 155%;
+    right: 20%;
+    /* zoom: 20%; */
+}
