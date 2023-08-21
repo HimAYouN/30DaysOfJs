@@ -8,20 +8,22 @@
     position: absolute;
     top: 120%;
     left: 10%;
-    width: 400px;
+    width: 250px;
     border: 2px solid black;
     border-radius: 10px;
+    overflow: hidden;
 
 }
 .pinkSection img{
+    overflow: hidden;
     position: relative;
-    width: 100%;
+    width: 200%;
     object-fit: cover;
     object-position: 100%;
     /* margin-top: -20px; */
-    height: 300px;  
+    height: 250px;  
     /* left: 10%; */
-    /* zoom-left: 130% ; */
+    zoom: 130% ;
 }
 .pinkSection p, button{
 text-align: left;
