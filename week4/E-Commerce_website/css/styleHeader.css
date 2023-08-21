@@ -7,10 +7,10 @@
     /* border: 5px solid black; */
     width: 100%;
     color: rgb(255, 238, 206);
-    
 }
 img{
     width: 100%;
+    display: block;
 }
 .headerImg{
     width: 100%;
