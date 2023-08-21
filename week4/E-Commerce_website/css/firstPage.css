@@ -1,6 +1,7 @@
 .firstPage{
-    background-color: rgb(244, 192, 244);
+    /* background-color: rgb(244, 192, 244); */
     height: 800px;
+    transition: 0.9s;
 }
 
 .pinkSection{
@@ -37,4 +38,10 @@ margin: 10px auto auto 10px;
     top: 155%;
     right: 20%;
     /* zoom: 20%; */
+}
+.firstPage:hover{
+    
+    background-color: rgb(244, 192, 244);
+
+
 }
