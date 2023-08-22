@@ -1,0 +1,32 @@
+@media screen and (max-width: 1000px) {
+  
+  .pinkSection {
+
+    width: 200px;
+  }
+  .pinkImg {
+    /* display: none;   */
+    width: 300px;
+    top: 135%;
+    right: 15%;
+  }
+  .greenImg {
+    width: 300px;
+    top: 235%;
+    right: 15%;
+  }
+  .greenSection {
+    width: 200px;
+    top: 240%;
+  }
+  .blueSection {
+    width: 200px;
+    top: 340%;
+  }
+  .blueImage {
+    width: 300px;
+    top: 335%;
+    right: 15%;
+  }
+
+}
