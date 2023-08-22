@@ -23,60 +23,7 @@
 .blueSection img:hover,
 .blueImage img:hover,
 .footerPage img:hover {
-  transform: scale(1.05); /* Enlarge the image on hover */
+  transform: scale(1.06); /* Enlarge the image on hover */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
 }
 
-
-/* Media queries for mobile responsiveness */
-
-
-@media screen and (max-width: 768px) {
-    /* Adjust header padding for smaller screens */
-    .header {
-      padding: 50px 0;
-    }
-  
-    /* Center align text in sections */
-    .pinkSection,
-    .greenSection,
-    .blueSection,
-    .footerPage {
-      text-align: center;
-    }
-  
-    /* Reduce font size for smaller screens */
-    .heading1 {
-      font-size: 24px;
-    }
-  
-    .heading2 {
-      font-size: 18px;
-    }
-  
-    .heading3 {
-      font-size: 14px;
-    }
-  
-    /* Adjust image sizes for smaller screens */
-    .headerImg,
-    .pinkSection img,
-    .greenImg img,
-    .greenSection img,
-    .blueSection img,
-    .blueImage img,
-    .footerPage img {
-      width: 80%; /* Adjust the width as needed */
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto; /* Center align images */
-    }
-    
-    /* Adjust padding for mobile buttons */
-    .button,
-    .footerB {
-      padding: 8px 16px;
-    }
-  }
-  
