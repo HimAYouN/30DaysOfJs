@@ -1,0 +1,28 @@
+/* Style the images */
+.headerImg,
+.pinkSection img,
+.pinkImg img,
+.greenImg img,
+.greenSection img,
+.blueSection img,
+.blueImage img,
+.footerPage img {
+  /* max-width: 100%; */
+  /* height: auto; */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for smooth hover effects */
+}
+
+/* Add hover effect to images */
+
+.pinkSection img:hover,
+.pinkImg img:hover,
+.greenImg img:hover,
+.greenSection img:hover,
+.blueSection img:hover,
+.blueImage img:hover,
+.footerPage img:hover {
+  transform: scale(1.05); /* Enlarge the image on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+}
