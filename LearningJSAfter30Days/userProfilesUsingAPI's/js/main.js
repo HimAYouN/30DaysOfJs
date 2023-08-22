@@ -17,7 +17,7 @@ const users =  async()=>{
     phone = phone +"<br>"+ obj.phone;
     
   });
-  document.getElementById('name').innerHTML = username ;
+  document.getElementById('name').innerHTML = obj.name ;
   document.getElementById('address').innerHTML = add;
   document.getElementById('email').innerHTML = email;
   document.getElementById('phone').innerHTML = phone;
