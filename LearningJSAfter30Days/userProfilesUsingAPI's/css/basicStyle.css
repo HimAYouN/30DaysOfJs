@@ -1,0 +1,75 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBar{
+    display: inline;
+    height: 70px;
+    
+}
+.container{
+    border: none;
+    display: grid;
+    
+    grid-column: 5;
+}
+h1{
+    font-size: 20px ;
+}
+div{
+    width: 200px;
+    height: 150px;
+    border: 1px solid gray;
+    margin: 10px 10px;
+} */
+
+/* basicStyle.css */
+/* Apply general styling to all the divs */
+
+body{
+    
+    background-color: #f0f0f0;
+}
+
+.navBar{
+    border: none;
+    box-shadow: none;
+    background-color: #f0f0f0;
+}
+div {
+
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    background-color: #f8f8f8;
+  }
+  
+  /* Style the heading within the divs */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the paragraphs within the divs */
+  p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  
+  /* gridLayout.css */
+/* Create a grid layout with up to 4 columns */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Up to 4 columns */
+    gap: 20px; /* Gap between boxes */
+}
+
+  
+  /* Add more unique styles for other divs if needed */
+  
