@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    /* max-width: 720px; */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/3xb8wmui4eza1.jpg");
+    background-size: cover; /* Cover the container while maintaining aspect ratio */
+    background-repeat: no-repeat;
+    background-position: center center; /* Center the image */
+
+
+}
+
+.tranparentBG {
+    width: 350px;
+    height: 600px;
+    position: absolute; /* Position the overlay absolutely within the container */
+    top: 50%; /* Vertically center the overlay */
+    left: 50%; /* Horizontally center the overlay */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    background-color: rgba(246, 246, 246, 0.5); /* Semi-transparent black background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+
+    /**/
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+}
+
+
+.usernameBox{
+    margin: 20px;
+    margin-bottom: 0px;
+    height: 20px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.inputBox{
+    margin: 20px;
+    margin-top: 10px;
+        height: 20px;
+        width: auto;
+        border: none;
+
+}
+.passwordBox{
+    margin: 20px;
+    margin-bottom: 0px;
+    height: 20px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+.passwordTextBox{
+    margin: 20px;
+    margin-top: 10px;
+        height: 20px;
+        width: auto;
+        border: none;
+
+}
