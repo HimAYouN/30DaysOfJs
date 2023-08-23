@@ -36,9 +36,7 @@
 
 @media screen and (max-width: 768px) {
   /* Adjust header padding for smaller screens */
-  .header {
-    padding: 50px 0;
-  }
+  
 
   /* Center align text in sections */
   .pinkSection,
@@ -62,24 +60,48 @@
   }
 
   /* Adjust image sizes for smaller screens */
-  .headerImg,
-  .pinkSection img,
-  .greenImg img,
-  .greenSection img,
-  .blueSection img,
-  .blueImage img,
-  .footerPage img {
-    width: 80%; /* Adjust the width as needed */
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto; /* Center align images */
-  }
   
-  /* Adjust padding for mobile buttons */
-  .button,
-  .footerB {
-    padding: 8px 16px;
+  .pinkSection {
+    top: 110%;
+    left: 40%;
+    width: 200px;
+  }
+  .pinkImg {
+    /* display: none;   */
+    width: 200px;
+    top: 175%;
+    left: 40%;
+  }
+  .greenImg {
+    width: 200px;
+    top: 275%;
+    left: 40%;
+  }
+  .greenSection {
+    top: 210%;
+    left: 40%;
+    width: 200px;
+  }
+  .blueSection {
+    top: 320%;
+    left: 40%;
+    width: 200px;
+  }
+  .blueImage {
+    width: 200px;
+    top: 380%;
+    left: 40%;
+  }
+  .footerP{
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .footerB{
+    height: 40px;
+        width: 100px;
+        font-size: 15px;
   }
 }
 
