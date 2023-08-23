@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../../images/g1pysw8rov2b1.jpg");
+  background-image: url("../../images/88u3izrcw6za1.jpg");
   background-size: cover; /* Cover the container while maintaining aspect ratio */
   background-repeat: no-repeat;
   background-position: center center; /* Center the image */
@@ -42,59 +42,29 @@
   flex-direction: column;
   /* justify-content: center; */
   align-items: flex-start;
-}
-
-.space{
-    height: 50px;
-}
-.usernameBox {
-  text-align: center;
-  border-top: 4px solid transparent;
-  margin: 20px;
-  height: 30px;
-  width: 120px;
-  /* border: none; */
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.usernameinputBox {
-  margin: 20px;
-  margin-top: 10px;
-  height: 30px;
-  width: 220px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.5);
-  outline: none;
+  align-items: center;
 }
 
 .messageBox {
-  border-top: 4px solid transparent;
+    border-top: 4px solid transparent;
   margin: 20px;
-  height: 30px;
-  width: 120px;
+  height: 300px;
+  width: 250px;
   /* border: none; */
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-
-.messageBoxInput {
-    margin: 20px;
-    margin-top: 10px;
-    height: 130px;
-    width: 220px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.5);
-    outline: none;
+.space {
+  height: 40px;
 }
 
 button {
   transition: 0.4s;
 }
-.sendMessage {
-    margin: 10px;
-    margin-left: auto; /* Add this to push the button to the right */
-    margin-right: 20px;
+.doneBtn {
+  margin: 10px;
+  margin-left: auto; /* Add this to push the button to the right */
+  margin-right: 20px;
   height: 30px;
   width: 120px;
   border: none;
@@ -104,8 +74,22 @@ button {
   cursor: pointer;
 }
 
-.sendMessage:hover {
+.doneBtn:hover {
   background-color: #ffffff; /* Adjust the neon color as needed */
   box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; /* Neon glow effect */
   color: black;
+}
+
+.ptag{
+    height: 30px;
+  width: 300px;
+  border: none;
+  border-radius: 20px;
+  background-color: #b934da77;
+  color: wheat;
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
 }
