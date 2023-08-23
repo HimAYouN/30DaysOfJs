@@ -55,7 +55,6 @@
   width: 120px;
   /* border: none; */
   border-radius: 20px;
-  background-color: white;
   background-color: rgb(255, 255, 255, 0.5);
 }
 
@@ -76,7 +75,7 @@
   width: 120px;
   /* border: none; */
   border-radius: 20px;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .messageBoxInput {
@@ -93,12 +92,14 @@ button {
   transition: 0.4s;
 }
 .sendMessage {
-  margin: 10px 20px;
+    margin: 10px;
+    margin-left: auto; /* Add this to push the button to the right */
+    margin-right: 20px;
   height: 30px;
   width: 120px;
   border: none;
   border-radius: 20px;
-  background-color: #3497da;
+  background-color: #dada34;
   color: white;
   cursor: pointer;
 }
