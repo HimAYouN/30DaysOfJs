@@ -77,3 +77,51 @@
         border: none;
 
 }
+
+.space{
+    height: 70px;
+}
+
+button{
+    transition: 0.4s;
+}
+    .loginbox{
+        margin: 20px;
+        height: 30px;
+        width: 120px;
+        border: none;
+        border-radius: 20px;
+        background-color: #3498db;
+        color: white;
+        cursor: pointer;
+    }
+
+    .signupBox {
+        margin: 20px;
+        height: 30px;
+        width: 120px;
+        border: none;
+        border-radius: 20px;
+        background-color: #e74c3c;
+        color: white;
+        cursor: pointer;
+    }
+
+    .remainAnonymous{   
+        margin: 20px;
+        height: 30px;
+        width: 140px;
+        border: none;
+        border-radius: 20px;
+        background-color: #e73cc8;
+        color: white;
+        cursor: pointer;
+    }
+
+    .loginbox:hover,
+    .signupBox:hover,
+    .remainAnonymous:hover{
+        background-color: #000000; /* Adjust the neon color as needed */
+        box-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000; /* Neon glow effect */
+
+    }
