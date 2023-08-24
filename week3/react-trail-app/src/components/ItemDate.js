@@ -1,11 +1,17 @@
 import './ItemDate.css';
 
-function ItemDate(){
+function ItemDate(props){
+
+    const day = props.day;
+    const month = props.month;
+    const year = props.year;
+
+
     return (
         <div className='mfg-date'>
-            <span>20</span>
-            <span>June</span>
-            <span>2020</span>
+            <span>{day}</span>
+            <span>{month}</span>
+            <span>{year}</span>
         </div>
     );
 }
