@@ -1,0 +1,4 @@
+function imDone(){
+    window.close();
+}
+
