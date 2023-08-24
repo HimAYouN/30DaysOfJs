@@ -2,10 +2,11 @@ import "./App.css";
 
 import Item from "./components/Item";
 import ItemDate from "./components/ItemDate";
+import Card from "./components/Card";
 
 
 function App() {
-  const itemTwoName = "SrufExel";
+  
   const response = [
     {
       itemName : "Nirma",
@@ -34,7 +35,7 @@ function App() {
   ];
   return (
     <div>
-      <cards>
+      <Card>
 
       <Item name={response[0].itemName}>
         Hey i'm Name
@@ -48,7 +49,7 @@ function App() {
       <ItemDate day={response[2].itemDate.itemDay} month={response[2].itemDate.itemMonth} year={response[2].itemDate.itemYear}></ItemDate>
 
       <div className="App">Hello World</div>
-      </cards>
+      </Card>
     </div>
   );
 }
