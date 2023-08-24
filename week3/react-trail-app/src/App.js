@@ -34,7 +34,11 @@ function App() {
   ];
   return (
     <div>
-      <Item name={response[0].itemName}></Item>
+      <cards>
+
+      <Item name={response[0].itemName}>
+        Hey i'm Name
+        </Item>
       <ItemDate day={response[0].itemDate.itemDay} month={response[0].itemDate.itemMonth} year={response[0].itemDate.itemYear}></ItemDate>
 
       <Item name={response[1].itemName}></Item>
@@ -44,6 +48,7 @@ function App() {
       <ItemDate day={response[2].itemDate.itemDay} month={response[2].itemDate.itemMonth} year={response[2].itemDate.itemYear}></ItemDate>
 
       <div className="App">Hello World</div>
+      </cards>
     </div>
   );
 }

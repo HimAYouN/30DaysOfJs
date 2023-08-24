@@ -3,7 +3,11 @@ import "./Item.css";
 function Item(props){
     const itemName = props.name;
     return(
-        <p className="nirma">{itemName}</p>
+        <div>
+            <p className="nirma">{itemName}</p>
+            {props.children}
+            
+        </div>
     );
 }
 
