@@ -1,16 +1,24 @@
 import "./Item.css";
+import React, {useState} from "react";
 
 function Item(props){
+
+    const itemName = props.name;
+
+    const[name, setName] = useState(props.name);
+    
+
     function clicker(){
+        setName("Popcorn");
         console.log("Button Clicked");
       }
       
-    const itemName = props.name;
     return(
         <div>
-            <p className="nirma">{itemName}</p>
+            <p className="nirma">{itemName}
             {props.children}
             <button onClick={clicker}>Click</button>
+            </p>
         </div>
     );
 }
