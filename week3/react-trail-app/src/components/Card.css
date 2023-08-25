@@ -1,4 +1,5 @@
 .card{
     display: flex;
-    color: white;
+    color: black;
+    flex-direction: column;
 }

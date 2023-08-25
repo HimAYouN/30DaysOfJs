@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  align-items: center;
+  justify-content: center;
   font-size: 40px;
   background-color: gray;
   width: 100vw;
