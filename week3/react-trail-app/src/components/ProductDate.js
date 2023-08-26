@@ -3,8 +3,8 @@ import React from "react";
 
 
  const ProductDate = (props)=>{
-    const month = props.itemDate.Month;
-    const year = props.itemDate.Year;
+    const month = props.itemDate.Month; 
+    const year = props.itemDate.Year; 
     const day = props.itemDate.Day;
 
     return (
