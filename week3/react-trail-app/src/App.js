@@ -1,6 +1,6 @@
 import "./App.css";
 
-import Card from "./components/Card";
+// import Card from "./components/Card";
 import Products from "./components/Products";
 import NewProduct from "./components/NewProduct";
 
