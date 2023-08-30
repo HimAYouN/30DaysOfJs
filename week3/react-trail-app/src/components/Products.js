@@ -1,5 +1,6 @@
 import ProductItem from './ProductItem';
 import Card from './Card';
+import './Products.css';
 
 // import './Products.css';
 
@@ -7,21 +8,20 @@ const Products = (props)=>{
     return (
         <Card className="products">
             <ProductItem
-                title={props[0].title}
-                amount={props.items[0].amount}
-                date={props.items[0].date}
+                title={props.product[0].title}
+                amount={props.product[0].amount}
+                date={props.product[0].itemDate}
             />
             <ProductItem
-                title={props.items[1].title}
-                amount={props.items[1].amount}
-                date={props.items[1].date}
+                title={props.product[1].title}
+                amount={props.product[1].amount}
+                date={props.product[1].itemDate}
             />
             <ProductItem
-                title={props.items[2].title}
-                amount={props.items[2].amount}
-                date={props.items[2].date}
+                title={props.product[2].title}
+                amount={props.product[2].amount}
+                date={props.product[2].itemDate}
             />
-
             
         </Card>
     )

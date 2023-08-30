@@ -11,9 +11,9 @@ function App() {
       id : 'p1',
       title : "Nirma",
       itemDate:{
-        Day: 20,
-        Month : "August",
-        Year : 2000
+        itemDay: 20,
+        itemMonth : "August",
+        itemYear : 2000
       },
       amount : 100
     },
@@ -42,20 +42,8 @@ function App() {
     <div>
 
       <NewProduct/>
-      <Products items={product}/>
-      {/* <Card>
-
-      <Item name={response[0].itemName}></Item>
-      <ItemDate day={response[0].itemDate.itemDay} month={response[0].itemDate.itemMonth} year={response[0].itemDate.itemYear}></ItemDate>
-
-      <Item name={response[1].itemName}></Item>
-      <ItemDate day={response[1].itemDate.itemDay} month={response[1].itemDate.itemMonth} year={response[1].itemDate.itemYear}></ItemDate>
-
-      <Item name={response[2].itemName}></Item>
-      <ItemDate day={response[2].itemDate.itemDay} month={response[2].itemDate.itemMonth} year={response[2].itemDate.itemYear}></ItemDate>
-
+      <Products product={product}/>
       
-      </Card> */}
     </div>
   );
 }

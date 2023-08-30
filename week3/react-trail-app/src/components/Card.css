@@ -2,4 +2,8 @@
     display: flex;
     color: black;
     flex-direction: column;
+    background-color: gray;
+    height: 100vh;
 }
+
+

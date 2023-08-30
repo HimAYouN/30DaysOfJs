@@ -1,18 +1,16 @@
 import React from "react";
 // import  '../App.js'
 //  import './ProductDate.css';
+// import ProductItem from "./ProductItem";
 
 
  const ProductDate = (props)=>{
-    const month = props.itemDate.Month; 
-    const year = props.itemDate.Year; 
-    const day = props.itemDate.Day;
 
     return (
         <div className="product-date">
-            <div className="product-date_month">{month}</div>
-            <div className="product-date_year">{year}</div>
-            <div className="product-date_day">{day}</div>
+            <div className="product-date_month">{props.date.itemMonth}</div>
+            <div className="product-date_year">{props.date.itemYear}</div>
+            <div className="product-date_day">{props.date.itemDay}</div>
         </div>
     )
  }
