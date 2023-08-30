@@ -7,7 +7,7 @@ const Products = (props)=>{
     return (
         <Card className="products">
             <ProductItem
-                title={props.items[0].title}
+                title={props[0].title}
                 amount={props.items[0].amount}
                 date={props.items[0].date}
             />

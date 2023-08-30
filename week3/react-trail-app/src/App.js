@@ -6,7 +6,7 @@ import NewProduct from "./components/NewProduct";
 
 function App() {
   
-  const products = [
+  const product = [
     {
       id : 'p1',
       title : "Nirma",
@@ -42,7 +42,7 @@ function App() {
     <div>
 
       <NewProduct/>
-      <Products items={products}/>
+      <Products items={product}/>
       {/* <Card>
 
       <Item name={response[0].itemName}></Item>
