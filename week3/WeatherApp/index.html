@@ -14,7 +14,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">My Weather App</a>
+        <a class="navbar-brand" href="#">Weather App</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -82,8 +82,9 @@
                 <h4 class="my-0 fw-normal">Temperature</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title"  id="temp">
-                  <small class="text-body-secondary fw-light">/c</small>
+                <h1 class="card-title pricing-card-title" >
+                  <span id="temp"></span>
+                  <small class="text-body-secondary fw-light"><span>&#8451;</span></small>
                 </h1>
                 <ul class="list-unstyled mt-3 mb-4">
                   <!-- <li>Temperature : <span id="temp"></span></li> -->
@@ -101,11 +102,11 @@
                 <h4 class="my-0 fw-normal">Moist</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title"  id="humidity">
-                  <small class="text-body-secondary fw-light">/c</small>
+                <h1 class="card-title pricing-card-title">
+                  <span id="humidity"></span>
+                  <small class="text-body-secondary fw-light">%</small>
                 </h1>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>Cloud PCT : <span id="cloud_pct"></span></li>
                   <li>Sunrise : <span id="sunrise"></span></li>
                   <li>Sunset : <span id="sunset"></span></li>
                 </ul>
@@ -120,12 +121,12 @@
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
-                  $29<small class="text-body-secondary fw-light">/mo</small>
+                  <span id="cloud_pct"></span>
+                  <small class="text-body-secondary fw-light">cloud_pct</small>
                 </h1>
                 <ul class="list-unstyled mt-3 mb-4">
                   <li>Wind Speed : <span id="wind_speed"></span></li>
                   <li>Wind Degree : <span id="wind_degrees"></span></li>
-                  <li>Phone and email support</li>
                 </ul>
                 
               </div>
