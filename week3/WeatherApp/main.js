@@ -1,5 +1,4 @@
-const url =
-  "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=srinagar";
+
 const options = {
   method: "GET",
   headers: {
@@ -7,8 +6,13 @@ const options = {
     "X-RapidAPI-Host": "weather-by-api-ninjas.p.rapidapi.com",
   },
 };
-const getWeather = (city)=>{
-  cityName.innerHTML = city
+
+function getWeather (cityName){
+  document.getElementById("cityName").innerHTML = cityName
+  console.log(cityName);
+  const url = "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city="+ cityName;
+
+
   fetch(url, options)
   .then((response) => response.json())
   .then((response) => {
@@ -27,11 +31,11 @@ const getWeather = (city)=>{
   .catch((err) => console.log(err));
 }
 
-
-submit.addEventListner('click', (e)=>{
-  e.preventDefault();
+function sendCityInfo(){
+  // e.preventDefault();
   getWeather(city.value);
-});
+  console.log(city.value);
+};
 
 
-getWeather("sirnagar");
+getWeather("Srinagar");
