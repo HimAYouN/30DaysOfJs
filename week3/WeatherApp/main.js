@@ -31,10 +31,12 @@ function getWeather (cityName){
   .catch((err) => console.log(err));
 }
 
-function sendCityInfo(){
+function sendCityInfo(e){
+  e.preventDefault();
   // e.preventDefault();
   getWeather(city.value);
   console.log(city.value);
+  return false;
 };
 
 
