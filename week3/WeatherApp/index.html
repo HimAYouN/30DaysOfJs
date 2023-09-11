@@ -56,21 +56,21 @@
               <a class="nav-link" href="#">Usage Guide</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-              id="city"
-            />
-            <button class="btn btn-outline-success" type="submit"  id="submit" onclick="sendCityInfo()">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
+    <form class="d-flex" role="search">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+        id="city"
+      />
+      <button class="btn btn-outline-success" type="submit"  id="submit"  >
+        Search
+      </button>
+    </form>
 
     <div class="main_container">
         <h1 class="my-4 text-center">Weather For <span id="cityName"></span></h1>
@@ -88,7 +88,7 @@
                 </h1>
                 <ul class="list-unstyled mt-3 mb-4">
                   <!-- <li>Temperature : <span id="temp"></span></li> -->
-                  <li>Min Temp :<span id="min_temp"></span></li>
+                  <!-- <li>Min Temp :<span id="min_temp"></span></li> -->
                   <li>Max Temp : <span id="max_temp"></span></li>
                   <li>Feels Like : <span id="feels_like"></span></li>
                 </ul>
@@ -210,6 +210,8 @@
         </div>
       </main>
     </div>
+
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
