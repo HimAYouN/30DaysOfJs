@@ -57,3 +57,31 @@ function timeProvider(code){
   return timeString;
 
 }
+
+
+
+
+
+
+const urlSrg =
+  "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=srinagar";
+const urlBla =
+  "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Baramulla";
+const urlKup =
+  "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=kupwara";
+
+function getLittleWeather(url, options, id1, id2, id3, id4) {
+  fetch(url, options)
+    .then((response) => response.json())
+    .then((response) => {
+      id1.innerHTML= response.temp;
+      id2.innerHTML = response.feels_like;
+      id3.innerHTML = response.humidity;
+      id4.innerHTML = response.wind_speed;
+    })
+    .catch((err) => console.log(err));
+}
+
+getLittleWeather(urlSrg, options, temp_srg, feels_like_srg, humidity_srg, wind_speed_srg);      
+getLittleWeather(urlSrg, options, temp_bla, feels_like_bla, humidity_bla, wind_speed_bla);      
+getLittleWeather(urlKup, options, temp_kup, feels_like_kup, humidity_kup, wind_speed_kup);      
