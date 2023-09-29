@@ -1,0 +1,65 @@
+/* Style the navbar */
+.navbar {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Style the heading within the navbar */
+  .navbar h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Style the searchBar container */
+  .searchBar {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Style the input field within the searchBar */
+  .inputField {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the search button within the searchBar */
+  .searchButton {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Change button color on hover */
+  .searchButton:hover {
+    background-color: #6abef6;
+  }
+  
+  /* Style the container */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  /* Style the searchResults and highlightSection */
+  .searchResults,
+  .highlightSection {
+    width: 48%; /* Adjust as needed for the desired width */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Add more specific styling for searchResults and highlightSection if needed */
+  
