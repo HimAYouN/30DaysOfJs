@@ -17,11 +17,20 @@ fetch(url, options)
   .catch((err) => console.log(err));
 
 
-// function contentFiller(data){
-//     const ele = document.getElementById('searchResults_section_id');
-//     const newEle = document.createElement('div');
-//     newEle.innerHTML= data[0].
+function contentFiller(data){
+    const ele = document.getElementById('searchResults_section_id');
+    const newEle1 = document.createElement('div');
+    const newEle2 = document.createElement('div');
+    const newEle3 = document.createElement('div');
+    const newEle4 = document.createElement('img');
 
-//     ele.appendChild(newEle);
+    newEle1.innerHTML= data.data[0].title;
+    newEle2.innerHTML= data.data[0].genres;
+    newEle3.innerHTML= data.data[0].episodes;
 
-// }
+    ele.appendChild(newEle4);
+    ele.appendChild(newEle1);
+    ele.appendChild(newEle2);
+    ele.appendChild(newEle3);
+
+}
