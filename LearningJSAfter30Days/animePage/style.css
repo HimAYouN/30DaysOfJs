@@ -41,25 +41,40 @@
   .searchButton:hover {
     background-color: #6abef6;
   }
-  
-  /* Style the container */
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin: 20px;
-  }
-  
-  /* Style the searchResults and highlightSection */
-  .searchResults,
-  .highlightSection {
-    width: 48%; /* Adjust as needed for the desired width */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  /* Add more specific styling for searchResults and highlightSection if needed */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
