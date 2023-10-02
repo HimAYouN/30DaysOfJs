@@ -10,6 +10,11 @@
   .navbar h1 {
     margin: 0;
     font-size: 24px;
+    display: flex;
+    /* left: 50%;/ */
+    margin-right: 100px;
+    margin: 10px 42%;
+    
   }
   
   /* Style the searchBar container */
@@ -41,7 +46,6 @@
   .searchButton:hover {
     background-color: #6abef6;
   }
-
 
 
 

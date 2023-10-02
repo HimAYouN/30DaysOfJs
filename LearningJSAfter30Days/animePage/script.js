@@ -56,7 +56,7 @@ function apiCalled(dataReturned) {
   dataReturned.forEach((animeData, index) => {
     // Create a new section element
     const section = document.createElement("div");
-    section.classList.add("anime_section"); // Optionally, add a class to the section
+    section.classList.add("anime_section", "card", "shadow-sm"); // Optionally, add a class to the section
     section.id= "anime_section_ID_"+index;
     // Create and append HTML content for the section based on the data
     section.innerHTML = `
