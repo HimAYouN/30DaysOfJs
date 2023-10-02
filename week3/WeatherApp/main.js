@@ -1,3 +1,5 @@
+
+const loadingAnimation = document.getElementById("loading-animation");
 const options = {
   method: "GET",
   headers: {
@@ -11,11 +13,12 @@ function getWeather(cityName) {
   // console.log(cityName);
   const url =
     "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + cityName;
-
+    loadingAnimation.style.display = "block";
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
       // console.log(response);
+      loadingAnimation.style.display = "none";
       cloud_pct.innerHTML = response.cloud_pct;
       temp.innerHTML = response.temp;
       feels_like.innerHTML = response.feels_like;
@@ -31,8 +34,13 @@ function getWeather(cityName) {
       timestamp = response.sunset;
       timestamp = timeProvider(timestamp);
       sunset.innerHTML = timestamp;
+
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      console.log(err)
+      loadingAnimation.style.display = "none";
+      
+    });
 }
 
 document.getElementById("submit").addEventListener("click", (e) => {

@@ -7,3 +7,41 @@ body{margin: 00;
 .main_container{
     box-sizing: border-box;
 }
+
+
+
+
+
+
+
+
+
+
+/*
+
+Code for animation when api is loading
+*/
+
+/* Define the loading animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Style for the loading element */
+  .loading-animation {
+    display: none; /* Initially hidden */
+    width: 140px;
+    height: 140px;
+    border: 4px solid #000000;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear infinite; /* Apply the animation */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  
