@@ -1,3 +1,14 @@
+
+
+const section = document.createElement("div");
+    section.classList.add("anime_section"); // Optionally, add a class to the section
+
+    section.id = "anime_section_ID";
+    section.innerHTML = "";
+
+    console.log(section);
+
+
 var searchElement = "";
 document
   .getElementById("searchButtonID")
@@ -17,13 +28,14 @@ function callTheAPI(searchElement) {
   const url =
     "https://anime-db.p.rapidapi.com/anime?page=1&size=10&search=" +
     searchElement;
-    console.log(url);
+    // console.log(url);
 
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
       console.log(response);
       // dataReturned = response.data;
+      clearPreviousELements();
       apiCalled(response.data);
     })
     .catch((err) => console.log(err));
@@ -35,11 +47,11 @@ function apiCalled(dataReturned) {
   const parentElement = document.getElementById("searchResults_section_id");
 
   // Loop through the data and create a section for each data object
-  dataReturned.forEach((animeData) => {
+  dataReturned.forEach((animeData, index) => {
     // Create a new section element
     const section = document.createElement("div");
-    section.classList.add("anime-section"); // Optionally, add a class to the section
-
+    section.classList.add("anime_section"); // Optionally, add a class to the section
+    section.id= "anime_section_ID_"+index;
     // Create and append HTML content for the section based on the data
     section.innerHTML = `
         <img src=${animeData.image}>
@@ -56,3 +68,12 @@ function apiCalled(dataReturned) {
     parentElement.appendChild(section);
   });
 }
+
+
+function clearPreviousELements(){
+    const parentElement = document.getElementById("searchResults_section_id");
+
+    while(parentElement.firstChild){
+      parentElement.removeChild(parentElement.firstChild);
+    }
+} 
