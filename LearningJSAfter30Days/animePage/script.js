@@ -1,22 +1,23 @@
 
-
-const section = document.createElement("div");
-    section.classList.add("anime_section"); // Optionally, add a class to the section
-
-    section.id = "anime_section_ID";
-    section.innerHTML = "";
-
-    console.log(section);
-
-
 var searchElement = "";
-document
-  .getElementById("searchButtonID")
-  .addEventListener("click", (searchElement) => {
-    searchElement = document.getElementById("inputElementID").value;
-    // console.log(searchElement);
-    callTheAPI(searchElement);
-  });
+const inputElement = document.getElementById("inputElementID");
+const searchButton = document.getElementById("searchButtonID");
+const loadingAnimation = document.getElementById("loading-animation");
+
+
+function handleSearch(){
+  const searchValue = inputElement.value;
+  callTheAPI(searchValue);
+}
+
+searchButton.addEventListener('click', handleSearch);
+inputElement.addEventListener("keydown", (event)=>{
+  if(event.key === "Enter"){
+    event.preventDefault();
+    handleSearch();
+  }
+})
+
 function callTheAPI(searchElement) {
   const options = {
     method: "GET",
@@ -29,16 +30,21 @@ function callTheAPI(searchElement) {
     "https://anime-db.p.rapidapi.com/anime?page=1&size=10&search=" +
     searchElement;
     // console.log(url);
-
+    loadingAnimation.style.display = "block";
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
       console.log(response);
+      loadingAnimation.style.display = "none";
       // dataReturned = response.data;
       clearPreviousELements();
       apiCalled(response.data);
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      console.log(err);
+      loadingAnimation.style.display = "none";
+    }
+    );
 }
 
 function apiCalled(dataReturned) {
