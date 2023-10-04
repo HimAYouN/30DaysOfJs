@@ -27,7 +27,7 @@ function callTheAPI(searchElement) {
     },
   };
   const url =
-    "https://anime-db.p.rapidapi.com/anime?page=1&size=10&search=" +
+    "https://anime-db.p.rapidapi.com/anime?page=1&size=12&search=" +
     searchElement;
     // console.log(url);
     loadingAnimation.style.display = "block";
@@ -60,7 +60,7 @@ function apiCalled(dataReturned) {
     section.id= "anime_section_ID_"+index;
     // Create and append HTML content for the section based on the data
     section.innerHTML = `
-        <img src=${animeData.image}>
+        <img class=${"imgClass"} src=${animeData.image}>
         <h2>${animeData.title}</h2>
         <p>Ranking: ${animeData.ranking}</p>
         <p>Genres: ${animeData.genres.join(", ")}</p>

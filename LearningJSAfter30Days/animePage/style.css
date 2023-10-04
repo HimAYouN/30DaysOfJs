@@ -113,23 +113,25 @@ Code for animation when api is loading
 
 
 
-/* Define the default background color */
 .anime_section {
   background-color: transparent;
   color: #000000;
   padding: 10px;
-  transition:  0.4s ease-in-out; /* Add a smooth transition */
+  transition:  0.35s ease-in-out; /* Add a smooth transition for background-image */
+  position: relative; /* Required for z-index */
 }
 
-/* Change the background color when hovering */
-.anime_section:hover{
-  background-color: #6abef6;
+/* Change the background image when hovering */
+.anime_section:hover {
+  background-color: #3498db;
   color: white;
-  scale: 1.05;
+  transform: scale(1.03); /* Scale the section when hovering */
   z-index: 1;
 }
 
-
-
-
-  
+.imgClass{
+  position: absolute;
+  width: 100%; /* Make the image width 100% of the container */
+  height: 100%;
+  object-fit: cover;
+}
