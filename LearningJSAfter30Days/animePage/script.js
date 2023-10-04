@@ -67,9 +67,10 @@ function apiCalled(dataReturned) {
         <p>Episodes: ${animeData.episodes}</p>
         <p>Status: ${animeData.status}</p>
         <p>Type: ${animeData.type}</p>
+        <p>${"Link: "}<a href="${animeData.link}" target="_blank" className="${searchButton}">${"CLICK HERE"}</a>${"!!!ANOTHER SITE!!!"}</p>
 
       `;
-
+      
     // Append the section to the parent element
     parentElement.appendChild(section);
   });
@@ -83,3 +84,6 @@ function clearPreviousELements(){
       parentElement.removeChild(parentElement.firstChild);
     }
 } 
+
+
+

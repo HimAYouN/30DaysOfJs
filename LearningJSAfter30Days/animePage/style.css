@@ -1,4 +1,14 @@
+
+body{
+  
+  background-color: #e8baff;
+  
+}
+
+
 /* Style the navbar */
+
+
 .navbar {
     background-color: #3498db;
     color: #fff;
@@ -102,6 +112,22 @@ Code for animation when api is loading
 }
 
 
+
+/* Define the default background color */
+.anime_section {
+  background-color: transparent;
+  color: #000000;
+  padding: 10px;
+  transition:  0.4s ease-in-out; /* Add a smooth transition */
+}
+
+/* Change the background color when hovering */
+.anime_section:hover{
+  background-color: #6abef6;
+  color: white;
+  scale: 1.05;
+  z-index: 1;
+}
 
 
 
