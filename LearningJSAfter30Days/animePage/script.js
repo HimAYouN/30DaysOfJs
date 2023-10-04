@@ -86,4 +86,6 @@ function clearPreviousELements(){
 } 
 
 
+//Automaticalls calls the first api call on load 
 
+callTheAPI("");
