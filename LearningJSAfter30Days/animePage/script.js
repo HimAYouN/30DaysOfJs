@@ -2,12 +2,12 @@ var searchElement = "";
 const inputElement = document.getElementById("inputElementID");
 const searchButton = document.getElementById("searchButtonID");
 const loadingAnimation = document.getElementById("loading-animation");
-const box = document.getElementById("box");
  
 
 function handleSearch() {
   const searchValue = inputElement.value;
   callTheAPI(searchValue);
+  inputElement.value = " ";
 }
 
 searchButton.addEventListener("click", handleSearch);
@@ -31,13 +31,11 @@ function callTheAPI(searchElement) {
     searchElement;
   // console.log(url);
   loadingAnimation.style.display = "block";
-  box.style.display = "block";
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
       // console.log(response);
       loadingAnimation.style.display = "none";
-      box.style.display = "none";
       // dataReturned = response.data;
       clearPreviousELements();
       apiCalled(response.data);
@@ -45,7 +43,6 @@ function callTheAPI(searchElement) {
     .catch((err) => {
       console.log(err);
       loadingAnimation.style.display = "none";
-      box.style.display = "none";
     });
 }
 
@@ -91,8 +88,3 @@ function clearPreviousELements() {
 
 callTheAPI("");
 
-
-
-window.addEventListener('load', ()=>{
-  
-})
