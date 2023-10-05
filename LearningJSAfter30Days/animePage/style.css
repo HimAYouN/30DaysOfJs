@@ -2,7 +2,7 @@
 body{
   background: rgb(52,152,219);
   background: linear-gradient(0deg, rgba(52,152,219,1) 0%, rgba(232,180,255,1) 100%);
-  
+  margin: 0;
 }
 
 /* Style the navbar */
@@ -112,7 +112,17 @@ Code for animation when api is loading
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.box{
+  margin: 0;
+  position: absolute;
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+}
+.boxHide{
+  display: none;
+}
 
 
 
