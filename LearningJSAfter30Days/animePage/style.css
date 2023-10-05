@@ -5,9 +5,7 @@ body{
   
 }
 
-
 /* Style the navbar */
-
 
 .navbar {
   background: rgb(232,180,255);
@@ -183,8 +181,6 @@ overflow: hidden;
 
 .imgClass{
   display: none;
-  /* transition:  0.35s ease-in-out; */
-  transition:  0.45s ease-in-out;
 }
 
 
