@@ -32,7 +32,7 @@ function callTheAPI(searchElement) {
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
-      console.log(response);
+      // console.log(response);
       loadingAnimation.style.display = "none";
       // dataReturned = response.data;
       clearPreviousELements();
