@@ -137,7 +137,7 @@ overflow: hidden;
 }
 .anime_section:hover {
   opacity: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: black;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   transform: scale(1.03); /* Scale the section when hovering */
@@ -162,7 +162,7 @@ overflow: hidden;
 /* Change the background image when hovering */
 .anime_section:hover {
   opacity: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: black;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   transform: scale(1.03); /* Scale the section when hovering */
