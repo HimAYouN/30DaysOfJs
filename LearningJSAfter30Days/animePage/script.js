@@ -1,22 +1,20 @@
-
 var searchElement = "";
 const inputElement = document.getElementById("inputElementID");
 const searchButton = document.getElementById("searchButtonID");
 const loadingAnimation = document.getElementById("loading-animation");
 
-
-function handleSearch(){
+function handleSearch() {
   const searchValue = inputElement.value;
   callTheAPI(searchValue);
 }
 
-searchButton.addEventListener('click', handleSearch);
-inputElement.addEventListener("keydown", (event)=>{
-  if(event.key === "Enter"){
+searchButton.addEventListener("click", handleSearch);
+inputElement.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
     event.preventDefault();
     handleSearch();
   }
-})
+});
 
 function callTheAPI(searchElement) {
   const options = {
@@ -29,8 +27,8 @@ function callTheAPI(searchElement) {
   const url =
     "https://anime-db.p.rapidapi.com/anime?page=1&size=12&search=" +
     searchElement;
-    // console.log(url);
-    loadingAnimation.style.display = "block";
+  // console.log(url);
+  loadingAnimation.style.display = "block";
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
@@ -43,8 +41,7 @@ function callTheAPI(searchElement) {
     .catch((err) => {
       console.log(err);
       loadingAnimation.style.display = "none";
-    }
-    );
+    });
 }
 
 function apiCalled(dataReturned) {
@@ -57,35 +54,34 @@ function apiCalled(dataReturned) {
     // Create a new section element
     const section = document.createElement("div");
     section.classList.add("anime_section", "card", "shadow-sm"); // Optionally, add a class to the section
-    section.id= "anime_section_ID_"+index;
+    section.id = "anime_section_ID_" + index;
     // Create and append HTML content for the section based on the data
-    section.innerHTML = `
-        <img class=${"imgClass"} src=${animeData.image}>
-        <h2>${animeData.title}</h2>
-        <p>Ranking: ${animeData.ranking}</p>
-        <p>Genres: ${animeData.genres.join(", ")}</p>
-        <p>Episodes: ${animeData.episodes}</p>
-        <p>Status: ${animeData.status}</p>
-        <p>Type: ${animeData.type}</p>
-        <p>${"Link: "}<a href="${animeData.link}" target="_blank" className="${searchButton}">${"CLICK HERE"}</a>${"!!!ANOTHER SITE!!!"}</p>
-
+    section.innerHTML = 
+    `
+      <img class=${"imgClass"} src=${animeData.image}>
+      <h2>${animeData.title}</h2>
+      <p>Ranking: ${animeData.ranking}</p>
+      <p>Genres: ${animeData.genres.join(", ")}</p>
+      <p>Episodes: ${animeData.episodes}</p>
+      <p>Status: ${animeData.status}</p>
+      <p>Type: ${animeData.type}</p>
+       
       `;
-      
+      // <p>${"Link: "}<a href="${animeData.link}" target="_blank" className="${searchButton}">${"CLICK HERE"}</a>${"!!!ANOTHER SITE!!!"}</p>
+
     // Append the section to the parent element
     parentElement.appendChild(section);
   });
 }
 
+function clearPreviousELements() {
+  const parentElement = document.getElementById("searchResults_section_id");
 
-function clearPreviousELements(){
-    const parentElement = document.getElementById("searchResults_section_id");
+  while (parentElement.firstChild) {
+    parentElement.removeChild(parentElement.firstChild);
+  }
+}
 
-    while(parentElement.firstChild){
-      parentElement.removeChild(parentElement.firstChild);
-    }
-} 
-
-
-//Automaticalls calls the first api call on load 
+//Automaticalls calls the first api call on load
 
 callTheAPI("");

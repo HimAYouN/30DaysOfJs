@@ -1,7 +1,7 @@
 
 body{
-  
-  background-color: #e8baff;
+  background: rgb(52,152,219);
+  background: linear-gradient(0deg, rgba(52,152,219,1) 0%, rgba(232,180,255,1) 100%);
   
 }
 
@@ -10,7 +10,8 @@ body{
 
 
 .navbar {
-    background-color: #3498db;
+  background: rgb(232,180,255);
+  background: linear-gradient(0deg, rgba(232,180,255,1) 0%, rgba(52,152,219,1) 100%);
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -49,12 +50,15 @@ body{
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition:  0.2s ease-in-out;
+    margin-left: 15px;
   }
   
   /* Change button color on hover */
   .searchButton:hover {
-    background-color: #6abef6;
+    background: rgb(232,180,255);
+    background: linear-gradient(0deg, rgb(112, 253, 255) 0%, rgb(44, 228, 96) 100%);
+    scale: 1.15;
   }
 
 
@@ -115,10 +119,36 @@ Code for animation when api is loading
 
 
 
+
+
+
+
+
+
+
+
+.anime_section {
+  background-color: transparent;
+color: #000000;
+padding: 0;
+transition:  0.45s ease-in-out; /* Add a smooth transition for background-image */
+position: relative; /* Required for z-index */
+overflow: hidden; 
+}
+.anime_section:hover {
+  opacity: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: scale(1.03); /* Scale the section when hovering */
+  z-index: 1;
+}
+
+
 @media screen and (min-width: 1025px) {
   
 .anime_section {
-  background-color: transparent;
+  background: transparent;
   color: #000000;
   padding: 0;
   transition:  0.45s ease-in-out; /* Add a smooth transition for background-image */
@@ -132,7 +162,7 @@ Code for animation when api is loading
 /* Change the background image when hovering */
 .anime_section:hover {
   opacity: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   transform: scale(1.03); /* Scale the section when hovering */
@@ -145,7 +175,7 @@ Code for animation when api is loading
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.3;
+  opacity: 0.5;
   z-index: 0;
   transition-delay: 0.5s;
 }
@@ -154,26 +184,11 @@ Code for animation when api is loading
 .imgClass{
   display: none;
   /* transition:  0.35s ease-in-out; */
+  transition:  0.45s ease-in-out;
 }
 
 
 
-}
-.anime_section {
-  background-color: transparent;
-color: #000000;
-padding: 0;
-transition:  0.45s ease-in-out; /* Add a smooth transition for background-image */
-position: relative; /* Required for z-index */
-overflow: hidden; 
-}
-.anime_section:hover {
-  opacity: 100%;
-  background-color: black;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  transform: scale(1.03); /* Scale the section when hovering */
-  z-index: 1;
 }
 
 
