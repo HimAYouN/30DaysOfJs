@@ -1,10 +1,10 @@
 # 30DaysOfJs
 Me Learning Javascript in 30 days and this repo is the track record.
 
-I completed all the basics in about a month, Asynchronous JS took around 6-8 days and the projects part took around 16-18 days extra.
+    I completed all the basics in about a month, Asynchronous JS took around 6-8 days and the projects part took around 16-18 days extra.
 
 
-The Projects part is mentioned below: 
+    The Projects part is mentioned below: 
         With the help of ChatGPT and googling (other sites and youtube):
                 
             - 📝 To-Do List : About 14 hours.
