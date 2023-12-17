@@ -3,7 +3,7 @@ Me Learning Javascript in 30 days and this repo is the track record.
 
 I completed  basics of js in about a month, Asynchronous JS took around 6-8 days and the projects part took around 16-18 days. Total of which is around 56 days (Not a month 😂).
 
-The basics of JS is easy and will be covered in a month or so if you already know some other language, but can take two or months if you are starting with JS itself.
+The basics of JS is easy and will be covered in a month or so if you already know some other language, but can take two or three months if you are starting with JS as first language.
 
 The Projects part is mentioned below: 
     With the help of ChatGPT and googling (other sites and youtube):
@@ -32,5 +32,5 @@ But the next one will be good enough.
 I am going to learn to react next and keep posting that in another repo, so please check my profile and i you like this repo then please give it a star ⭐.
 
 
-# [See What's in this repo ](himayoun.github.io/30DaysOfJs).
+# [See What's in this repo ](https://himayoun.github.io/30DaysOfJs/).
 # Thanks_For_Reading...
